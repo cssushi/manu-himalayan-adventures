@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
-import { NAV_LINKS, PHONE_DISPLAY, WHATSAPP_LINK, IMAGES } from '../constants';
+import { NAV_LINKS, PHONE_DISPLAY, IMAGES } from '../constants';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,15 +60,13 @@ const Navbar: React.FC = () => {
               </Link>
             ))}
             
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/contact"
               className="ml-4 flex items-center gap-2 bg-moss-700 hover:bg-moss-500 text-white px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all hover:scale-105 shadow-lg border border-moss-500"
             >
               <Phone size={14} />
               <span>Book Now</span>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Toggle */}
@@ -97,14 +95,13 @@ const Navbar: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/contact"
+              onClick={closeMenu}
               className="mt-8 flex justify-center items-center gap-2 bg-moss-700 text-white py-4 rounded-xl font-bold uppercase tracking-widest"
             >
               Call: {PHONE_DISPLAY}
-            </a>
+            </Link>
           </div>
           
           <button onClick={closeMenu} className="absolute top-6 right-6 text-white p-2">

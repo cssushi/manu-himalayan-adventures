@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Wind, Cloud, ThumbsUp, CheckCircle, ShieldAlert } from 'lucide-react';
-import { IMAGES, WHATSAPP_LINK } from '../constants';
+import { IMAGES } from '../constants';
 
 const Paragliding: React.FC = () => {
   return (
@@ -68,7 +69,7 @@ const Paragliding: React.FC = () => {
                 <h3 className="text-2xl font-bold text-stone-800 mb-6">Experience the Magic</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="relative h-64 rounded-2xl overflow-hidden">
-                    <img src="/webimagesall/paramain.jpg" alt="Paragliding Main View" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                    <img src="/paramain.jpg" alt="Paragliding Main View" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
                   </div>
                   <div className="relative h-64 rounded-2xl overflow-hidden">
                     <img src={IMAGES.paragliding2} alt="Paragliding View" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
@@ -88,14 +89,12 @@ const Paragliding: React.FC = () => {
                     <li className="flex gap-2"><CheckCircle size={18} className="text-moss-500" /> Professional Pilot</li>
                     <li className="flex gap-2"><CheckCircle size={18} className="text-moss-500" /> Transport Included</li>
                   </ul>
-                  <a 
-                    href={WHATSAPP_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/contact"
                     className="block w-full bg-moss-600 hover:bg-moss-500 text-white text-center font-bold py-4 rounded-xl transition-all hover:scale-105 shadow-lg mb-6"
                   >
-                    Book on WhatsApp
-                  </a>
+                    Book on Contact
+                  </Link>
                   <p className="text-xs text-center text-stone-500">
                     No advance payment needed to block inquiry.
                   </p>

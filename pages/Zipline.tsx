@@ -1,5 +1,6 @@
 import React from 'react';
-import { IMAGES, WHATSAPP_LINK } from '../constants';
+import { Link } from 'react-router-dom';
+import { IMAGES } from '../constants';
 
 const Zipline: React.FC = () => {
   return (
@@ -29,14 +30,12 @@ const Zipline: React.FC = () => {
                <span>• Kids Friendly</span>
              </div>
 
-             <a 
-                 href={WHATSAPP_LINK}
-                 target="_blank"
-                 rel="noopener noreferrer"
+             <Link 
+                 to="/contact"
                  className="inline-block bg-amber-500 text-stone-900 font-bold py-4 px-12 rounded-full shadow-lg hover:bg-amber-600 transition-transform hover:scale-105"
                >
                  Book Zipline
-             </a>
+             </Link>
            </div>
         </div>
       </div>

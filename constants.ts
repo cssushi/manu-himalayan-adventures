@@ -14,12 +14,12 @@ export const BOOKING_LINK = "https://www.booking.com/";
 
 // Local Images from public folder
 export const IMAGES = {
-  // Use local files from webimagesall
-  hero: "/webimagesall/Manali_in_winters.png",
+  // Use local files from public root
+  hero: "/Manali_in_winters.png",
   // Action rafting (keep local video/poster)
-  rafting: "/webimagesall/24.jpeg",
+  rafting: "/24.jpeg",
   // Paragliding: use local paraback and images 4 & 5
-  paragliding: "/webimagesall/paraback.jpg",
+  paragliding: "/paraback.jpg",
   paragliding2: "/4.jpeg",
   paragliding3: "/5.jpeg",
   // Safety Gear
@@ -33,11 +33,11 @@ export const IMAGES = {
   // Royal Enfield / Bike
   bike: "/23.jpeg",
   // 4x4 / Vehicle - use local jimny image
-  jimny: "/webimagesall/jimny.jpg",
+  jimny: "/jimny.jpg",
   // Wooden hotel room
   hotel: "/20.jpeg",
   // Waterfall (Jana Waterfall) - use local uploaded file
-  waterfall: "/webimagesall/jana1.jpg",
+  waterfall: "/jana1.jpg",
   // Krishna Temple
   temple: "/9.jpeg",
 

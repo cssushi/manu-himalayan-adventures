@@ -1,5 +1,6 @@
 import React from 'react';
-import { IMAGES, WHATSAPP_LINK } from '../constants';
+import { Link } from 'react-router-dom';
+import { IMAGES } from '../constants';
 
 const BungeeJumping: React.FC = () => {
   return (
@@ -39,14 +40,12 @@ const BungeeJumping: React.FC = () => {
              </div>
              
              <div className="text-center">
-               <a 
-                 href={WHATSAPP_LINK}
-                 target="_blank"
-                 rel="noopener noreferrer"
+               <Link 
+                 to="/contact"
                  className="inline-block bg-clay-700 hover:bg-clay-800 text-white font-bold py-4 px-12 rounded-full shadow-lg transition-transform hover:scale-105"
                >
-                 Book Now via WhatsApp
-               </a>
+                 Book Now via Contact
+               </Link>
              </div>
            </div>
         </div>

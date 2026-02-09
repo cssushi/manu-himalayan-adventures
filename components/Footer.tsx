@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
-import { PHONE_DISPLAY, EMAIL_ADDRESS, LOCATION, WHATSAPP_LINK, IMAGES } from '../constants';
+import { PHONE_DISPLAY, EMAIL_ADDRESS, LOCATION, IMAGES } from '../constants';
 
 const Footer: React.FC = () => {
   return (
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-forest-500 flex-shrink-0" />
-                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-white">{PHONE_DISPLAY}</a>
+                <Link to="/contact" className="hover:text-white">{PHONE_DISPLAY}</Link>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-forest-500 flex-shrink-0" />

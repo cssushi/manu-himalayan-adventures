@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Bike, Car, Shield, Check, FileText } from 'lucide-react';
-import { IMAGES, WHATSAPP_LINK } from '../constants';
+import { IMAGES } from '../constants';
 
 const VehicleRental: React.FC = () => {
   return (
@@ -31,7 +32,7 @@ const VehicleRental: React.FC = () => {
                  <li className="flex gap-2"><Check size={16} className="text-green-500"/> Well Serviced Engines</li>
                  <li className="flex gap-2"><Check size={16} className="text-green-500"/> Document Assistance</li>
                </ul>
-               <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="block w-full bg-forest-600 text-white text-center py-3 rounded-xl font-bold hover:bg-forest-700 transition">Check Rates on WhatsApp</a>
+               <Link to="/contact" className="block w-full bg-forest-600 text-white text-center py-3 rounded-xl font-bold hover:bg-forest-700 transition">Check Rates</Link>
              </div>
           </div>
 
@@ -42,17 +43,17 @@ const VehicleRental: React.FC = () => {
              <div className="p-8">
                <div className="flex items-center gap-2 text-forest-700 mb-2">
                  <Car size={24} />
-                 <h3 className="text-2xl font-serif font-bold">4x4 Car Rental</h3>
+                 <h3 className="text-2xl font-serif font-bold">4x4 Car Tour</h3>
                </div>
                <p className="text-stone-600 mb-6">
-                 Self-drive Suzuki Jimny and other robust cars available. Conquer the rugged terrains of Spiti and Ladakh with comfort and power.
+                 Guided 4x4 tours in Suzuki Jimny and similar vehicles. Our experienced drivers lead curated off-road tours—this is a driven tour service, not self-drive.
                </p>
                <ul className="space-y-2 mb-8 text-sm text-stone-700">
                  <li className="flex gap-2"><Check size={16} className="text-green-500"/> All Terrain Tyres</li>
                  <li className="flex gap-2"><Check size={16} className="text-green-500"/> Clean & Sanitized</li>
                  <li className="flex gap-2"><Check size={16} className="text-green-500"/> 24/7 Roadside Support</li>
                </ul>
-               <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="block w-full bg-forest-600 text-white text-center py-3 rounded-xl font-bold hover:bg-forest-700 transition">Check Rates on WhatsApp</a>
+               <Link to="/contact" className="block w-full bg-forest-600 text-white text-center py-3 rounded-xl font-bold hover:bg-forest-700 transition">Check Rates</Link>
              </div>
           </div>
         </div>

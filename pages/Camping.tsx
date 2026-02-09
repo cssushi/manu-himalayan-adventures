@@ -1,5 +1,6 @@
 import React from 'react';
-import { IMAGES, WHATSAPP_LINK } from '../constants';
+import { Link } from 'react-router-dom';
+import { IMAGES } from '../constants';
 import { Flame, Music, Footprints } from 'lucide-react';
 
 const Camping: React.FC = () => {
@@ -63,14 +64,12 @@ const Camping: React.FC = () => {
            <div className="h-80 rounded-3xl overflow-hidden shadow-lg relative bg-white flex flex-col items-center justify-center text-center p-8 border-2 border-stone-200">
                 <h3 className="text-3xl font-serif font-bold text-forest-700 mb-4">Book Your Stay</h3>
                 <p className="text-stone-700 mb-8 max-w-xs">Includes Dinner, Breakfast, Snacks, and Activities.</p>
-                <a 
-                 href={WHATSAPP_LINK}
-                 target="_blank"
-                 rel="noopener noreferrer"
+                <Link 
+                 to="/contact"
                  className="inline-block bg-amber-500 text-stone-900 font-bold py-3 px-8 rounded-full hover:bg-amber-600 transition-colors"
                >
                  Check Availability
-               </a>
+               </Link>
            </div>
         </div>
       </div>

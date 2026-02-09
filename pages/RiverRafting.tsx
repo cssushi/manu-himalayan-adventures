@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Anchor, Shield, Clock, MapPin, Users, CheckCircle, Smile } from 'lucide-react';
-import { IMAGES, WHATSAPP_LINK } from '../constants';
+import { IMAGES } from '../constants';
 import ReviewCard from '../components/ReviewCard';
 
 const RiverRafting: React.FC = () => {
@@ -70,14 +71,12 @@ const RiverRafting: React.FC = () => {
             <div className="bg-forest-900 text-white p-6 rounded-2xl shadow-lg sticky top-24">
               <h3 className="text-xl font-bold mb-4">Book Your Raft</h3>
               <p className="mb-6 text-forest-100 text-sm">March to June is the best season! Slots fill up fast.</p>
-              <a 
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link 
+                to="/contact"
                 className="block w-full bg-green-500 hover:bg-green-600 text-white text-center font-bold py-3 rounded-xl transition-colors mb-4"
               >
-                Book on WhatsApp
-              </a>
+                Book via Contact
+              </Link>
               <p className="text-xs text-center text-forest-300">Instant confirmation • No booking fees</p>
             </div>
             

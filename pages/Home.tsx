@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Star, Shield, Users, Map } from 'lucide-react';
-import { IMAGES, REVIEWS, WHATSAPP_LINK } from '../constants';
+import { IMAGES, REVIEWS } from '../constants';
 import ReviewCard from '../components/ReviewCard';
 
 const Home: React.FC = () => {
@@ -35,10 +35,8 @@ const Home: React.FC = () => {
           </p>
           
           {/* High Contrast CTA */}
-          <a 
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/adventure-sports"
             className="group relative px-10 py-5 bg-moss-600 text-white font-bold rounded-full overflow-hidden transition-all hover:scale-105 animate-fade-up shadow-[0_0_20px_rgba(79,119,45,0.5)] border-2 border-moss-500"
             style={{ animationDelay: '0.3s' }}
           >
@@ -46,7 +44,7 @@ const Home: React.FC = () => {
               Start Adventure <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </span>
             <div className="absolute inset-0 bg-moss-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -149,17 +147,11 @@ const Home: React.FC = () => {
 
       {/* 4. Sliding Gallery Strip */}
       <section className="py-0 overflow-hidden bg-earth-900">
-         <div className="flex gap-4 w-[200%] animate-[slideIn_60s_linear_infinite] hover:pause">
+         <div className="flex gap-4 w-full animate-[slideIn_60s_linear_infinite] hover:pause">
            {[IMAGES.snowmobile, IMAGES.yak, IMAGES.bungee, IMAGES.zipline, IMAGES.waterfall, IMAGES.temple].map((img, i) => (
              <div key={i} className="w-[400px] h-[300px] flex-shrink-0 relative group overflow-hidden">
                <img src={img} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Gallery" />
                <div className="absolute inset-0 bg-moss-900/20 group-hover:bg-transparent transition-colors"></div>
-             </div>
-           ))}
-            {/* Duplicate for infinite loop */}
-            {[IMAGES.snowmobile, IMAGES.yak, IMAGES.bungee, IMAGES.zipline, IMAGES.waterfall, IMAGES.temple].map((img, i) => (
-             <div key={`dup-${i}`} className="w-[400px] h-[300px] flex-shrink-0 relative group overflow-hidden">
-               <img src={img} className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" alt="Gallery" />
              </div>
            ))}
          </div>
@@ -212,14 +204,12 @@ const Home: React.FC = () => {
              The Mountains Are Calling
            </h2>
            <div className="flex flex-col md:flex-row gap-4 justify-center">
-             <a 
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link 
+              to="/contact"
               className="bg-moss-600 hover:bg-moss-500 text-white px-10 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-xl flex items-center justify-center gap-2"
             >
-              Book via WhatsApp
-            </a>
+              Book via Contact
+            </Link>
             <Link 
               to="/adventure-sports"
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-earth-900 px-10 py-4 rounded-full font-bold text-lg transition-colors flex items-center justify-center gap-2"

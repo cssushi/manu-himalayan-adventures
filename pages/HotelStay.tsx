@@ -1,6 +1,7 @@
 import React from 'react';
 import { Bed, Wifi, Car, Coffee, Check, Star, MapPin, Eye, ExternalLink } from 'lucide-react';
-import { IMAGES, WHATSAPP_LINK, MMT_LINK, GOIBIBO_LINK, BOOKING_LINK } from '../constants';
+import { IMAGES, MMT_LINK, GOIBIBO_LINK, BOOKING_LINK } from '../constants';
+import { Link } from 'react-router-dom';
 
 const HotelStay: React.FC = () => {
   return (
@@ -91,14 +92,12 @@ const HotelStay: React.FC = () => {
                  </div>
                </div>
 
-               <a 
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
+               <Link 
+                to="/contact"
                 className="block w-full bg-amber-500 hover:bg-amber-600 text-stone-900 text-center font-bold py-4 rounded-xl transition-all mb-4 shadow-lg hover:shadow-2xl border-2 border-amber-600"
                >
                 Check Availability
-               </a>
+               </Link>
                <p className="text-center text-xs text-stone-400">Best rates guaranteed via direct WhatsApp booking</p>
              </div>
           </div>
