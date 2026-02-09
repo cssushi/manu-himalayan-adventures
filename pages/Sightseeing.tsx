@@ -11,8 +11,8 @@ const Sightseeing: React.FC = () => {
 
          {/* Jana Waterfall */}
          <div className="bg-white rounded-3xl shadow-lg overflow-hidden mb-16 flex flex-col md:flex-row group hover:shadow-2xl transition-shadow duration-300">
-          <div className="md:w-1/2 h-24 md:h-32 overflow-hidden">
-               <img src="/jana1.jpg" alt="Jana Waterfall" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+          <div className="md:w-1/2 h-64 md:h-80 overflow-hidden">
+               <img src="/janafinal.jpeg" alt="Jana Waterfall" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             </div>
             <div className="md:w-1/2 p-10 flex flex-col justify-center">
                <h2 className="text-3xl font-serif font-bold text-stone-800 mb-4 flex items-center gap-2">

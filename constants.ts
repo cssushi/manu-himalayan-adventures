@@ -37,7 +37,7 @@ export const IMAGES = {
   // Wooden hotel room
   hotel: "/20.jpeg",
   // Waterfall (Jana Waterfall) - use local uploaded file
-  waterfall: "/jana1.jpg",
+  waterfall: "/janafinal.jpeg",
   // Krishna Temple
   temple: "/9.jpeg",
 
