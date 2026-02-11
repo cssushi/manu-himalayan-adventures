@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Wind, Cloud, ThumbsUp, CheckCircle, ShieldAlert } from 'lucide-react';
+import { Wind, Cloud, ThumbsUp, CheckCircle, ShieldAlert, MapPin } from 'lucide-react';
 import { IMAGES } from '../constants';
 
 const Paragliding: React.FC = () => {
@@ -11,6 +11,11 @@ const Paragliding: React.FC = () => {
         <img src={IMAGES.paragliding} alt="Paragliding in Manali" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white drop-shadow-lg text-center">High Fly Paragliding</h1>
+          <div className="absolute top-6 right-6">
+            <a href="https://maps.app.goo.gl/G81bdhgQz29vUTgn8" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/10 text-white px-3 py-2 rounded-full text-sm hover:bg-white/20">
+              <MapPin size={16} /> View Location
+            </a>
+          </div>
         </div>
       </div>
 
@@ -85,7 +90,7 @@ const Paragliding: React.FC = () => {
                <div className="bg-stone-900 text-white p-8 rounded-3xl shadow-xl sticky top-24">
                   <h3 className="text-2xl font-bold mb-6 font-serif">Book Flight</h3>
                   <ul className="text-stone-300 space-y-4 mb-8">
-                    <li className="flex gap-2"><CheckCircle size={18} className="text-moss-500" /> High Fly from Dobhi/Solang</li>
+                    <li className="flex gap-2"><CheckCircle size={18} className="text-moss-500" /> High Fly Paragliding</li>
                     <li className="flex gap-2"><CheckCircle size={18} className="text-moss-500" /> Professional Pilot</li>
                     <li className="flex gap-2"><CheckCircle size={18} className="text-moss-500" /> Transport Included</li>
                   </ul>
@@ -100,6 +105,25 @@ const Paragliding: React.FC = () => {
                   </p>
                </div>
             </div>
+         </div>
+
+         {/* Location Section */}
+         <div className="mt-12">
+           <h3 className="text-2xl font-bold text-stone-800 mb-4">Location</h3>
+          <a href="https://maps.app.goo.gl/G81bdhgQz29vUTgn8" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-2xl shadow-sm p-8 border border-stone-200 hover:shadow-lg hover:border-forest-300 transition-all mb-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <h4 className="text-lg font-bold text-stone-800 mb-2">High Fly Paragliding Point</h4>
+                <p className="text-stone-600 text-sm">Manali, Himachal Pradesh</p>
+              </div>
+              <div className="text-forest-600">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <iframe width="100%" height="400" style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps?q=32.042452,77.126370&z=15&output=embed" className="rounded-2xl shadow-sm border border-stone-200"></iframe>
          </div>
       </div>
     </div>

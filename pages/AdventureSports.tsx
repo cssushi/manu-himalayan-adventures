@@ -81,6 +81,33 @@ const AdventureSports: React.FC = () => {
                <div className="px-6 pb-6 text-forest-600 font-bold flex items-center gap-2">View Details &rarr;</div>
              </div>
            </Link>
+
+           <Link to="/balloon" className="group">
+             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+               <div className="h-64 overflow-hidden relative">
+                 <img src={IMAGES.paragliding} alt="Balloon" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+               </div>
+               <div className="p-6 flex-grow">
+                 <h3 className="text-xl font-bold text-stone-800 mb-2">Hot Air Balloon</h3>
+                 <p className="text-stone-600 text-sm">Scenic balloon flights at sunrise — gentle, panoramic views of the valley.</p>
+               </div>
+               <div className="px-6 pb-6 text-forest-600 font-bold flex items-center gap-2">View Details &rarr;</div>
+             </div>
+           </Link>
+
+           <Link to="/manali-leh-bike" className="group">
+             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+               <div className="h-64 overflow-hidden relative">
+                 <img src={IMAGES.manaliLeh} alt="Manali to Leh" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                 <div className="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full">Epic Adventure</div>
+               </div>
+               <div className="p-6 flex-grow">
+                 <h3 className="text-xl font-bold text-stone-800 mb-2">Manali to Leh Bike Tour</h3>
+                 <p className="text-stone-600 text-sm">400+ km ultimate Himalayan ride through mountain passes and stunning landscapes.</p>
+               </div>
+               <div className="px-6 pb-6 text-forest-600 font-bold flex items-center gap-2">View Details &rarr;</div>
+             </div>
+           </Link>
         </div>
       </div>
     </div>

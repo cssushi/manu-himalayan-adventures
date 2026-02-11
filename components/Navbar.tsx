@@ -45,12 +45,12 @@ const Navbar: React.FC = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center space-x-1">
+          <div className="hidden xl:flex items-center space-x-0.5 flex-wrap gap-1">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-3 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 hover:bg-white/10 ${
+                className={`px-2 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 hover:bg-white/10 ${
                   location.pathname === link.path
                     ? 'bg-white/20 text-white'
                     : `hover:text-clay-500 ${textColor}`
@@ -62,10 +62,10 @@ const Navbar: React.FC = () => {
             
             <Link
               to="/contact"
-              className="ml-4 flex items-center gap-2 bg-moss-700 hover:bg-moss-500 text-white px-5 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all hover:scale-105 shadow-lg border border-moss-500"
+              className="ml-2 flex items-center gap-1 bg-moss-700 hover:bg-moss-500 text-white px-3 py-1.5 rounded-full font-bold text-[10px] uppercase tracking-wider transition-all hover:scale-105 shadow-lg border border-moss-500"
             >
-              <Phone size={14} />
-              <span>Book Now</span>
+              <Phone size={12} />
+              <span>Book</span>
             </Link>
           </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Bike, Car, Shield, Check, FileText } from 'lucide-react';
+import { Bike, Car, Shield, Check, FileText, MapPin } from 'lucide-react';
 import { IMAGES } from '../constants';
 
 const VehicleRental: React.FC = () => {
@@ -9,6 +9,11 @@ const VehicleRental: React.FC = () => {
       <div className="bg-stone-900 text-white py-20 px-4 text-center">
         <h1 className="text-4xl font-serif font-bold mb-4">Vehicle Rental in Manali</h1>
         <p className="text-stone-300 max-w-2xl mx-auto">Explore the mountains at your own pace. Premium bikes and cars for rent.</p>
+        <div className="mt-4">
+          <a href="https://maps.app.goo.gl/ccV8uwHPRspU4k7f7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-stone-200 hover:underline">
+            <MapPin size={14} /> View Rental Location
+          </a>
+        </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-4 py-12">
@@ -84,6 +89,25 @@ const VehicleRental: React.FC = () => {
                  <p className="text-sm text-stone-600">No hidden mechanic costs. Discounts available for weekly and long-term bookings.</p>
               </div>
            </div>
+
+        {/* Location Section */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold text-stone-800 mb-4">Rental Location</h3>
+          <a href="https://maps.app.goo.gl/ccV8uwHPRspU4k7f7" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-2xl shadow-sm p-8 border border-stone-200 hover:shadow-lg hover:border-forest-300 transition-all mb-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <h4 className="text-lg font-bold text-stone-800 mb-2">Vehicle Rental Office - Manali</h4>
+                <p className="text-stone-600 text-sm">Main Bazaar, Manali</p>
+              </div>
+              <div className="text-forest-600">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <iframe width="100%" height="400" style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps?q=32.249461,77.185752&z=15&output=embed" className="rounded-2xl shadow-sm border border-stone-200"></iframe>
+        </div>
         </div>
 
       </div>

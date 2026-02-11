@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IMAGES } from '../constants';
+import { MapPin } from 'lucide-react';
 
 const BungeeJumping: React.FC = () => {
   return (
@@ -15,6 +16,11 @@ const BungeeJumping: React.FC = () => {
               <div className="absolute bottom-8 left-8 text-white">
                 <h2 className="text-3xl font-bold mb-2">Kothi Manali Bungee</h2>
                 <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold">Certified Safe</span>
+              </div>
+              <div className="absolute top-6 right-6">
+                <a href="https://maps.app.goo.gl/hYYywUge45rYpFiz7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/10 text-white px-3 py-2 rounded-full text-sm hover:bg-white/20">
+                  <MapPin size={16} /> View Location
+                </a>
               </div>
            </div>
 
@@ -47,6 +53,25 @@ const BungeeJumping: React.FC = () => {
                  Book Now via Contact
                </Link>
              </div>
+           </div>
+
+           {/* Location Section */}
+           <div className="mt-12">
+             <h3 className="text-2xl font-bold text-stone-800 mb-4">Location</h3>
+             <a href="https://maps.app.goo.gl/hYYywUge45rYpFiz7" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-2xl shadow-md p-12 border-2 border-stone-300 hover:shadow-lg hover:border-forest-400 transition-all mb-6">
+               <div className="flex items-center justify-between">
+                 <div>
+                   <h4 className="text-2xl font-bold text-stone-800 mb-3">Atal Bihari Vajpayee Bridge - Bungee Point</h4>
+                   <p className="text-stone-600 text-base">Raison River, Aut Valley</p>
+                 </div>
+                 <div className="text-forest-600">
+                   <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                   </svg>
+                 </div>
+               </div>
+             </a>
+             <iframe width="100%" height="400" style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps?q=32.316980,77.187161&z=15&output=embed" className="rounded-2xl shadow-sm border border-stone-200"></iframe>
            </div>
         </div>
       </div>

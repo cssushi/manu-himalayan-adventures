@@ -52,7 +52,9 @@ export const IMAGES = {
   sunsetView: "/22.jpeg",
 
   // Logo
-  logo: "/logoback.png"
+  logo: "/new_logo.png",
+  // Manali-Leh trip image
+  manaliLeh: "/manali_leh_trip.jpeg"
 };
 
 // Reviews
@@ -90,6 +92,8 @@ export const NAV_LINKS = [
   { name: "Stays", path: "/hotel-stay" },
   { name: "Zipline", path: "/zipline" },
   { name: "Bungee", path: "/bungee-jumping" },
+  { name: "Balloon", path: "/balloon" },
+  { name: "Manali-Leh", path: "/manali-leh-bike" },
   { name: "Sightseeing", path: "/sightseeing" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
