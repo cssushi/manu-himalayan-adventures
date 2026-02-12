@@ -84,6 +84,21 @@ const Paragliding: React.FC = () => {
                   </div>
                 </div>
               </section>
+
+              <section className="bg-white p-8 rounded-3xl shadow-sm border border-stone-100">
+                <h3 className="text-2xl font-bold text-stone-800 mb-6">Paragliding in Action</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="w-full rounded-xl overflow-hidden shadow-md">
+                    <video src="/paravid1.mp4" className="w-full h-auto" controls playsInline />
+                  </div>
+                  <div className="w-full rounded-xl overflow-hidden shadow-md">
+                    <video src="/paravid2.mp4" className="w-full h-auto" controls playsInline />
+                  </div>
+                  <div className="w-full rounded-xl overflow-hidden shadow-md md:col-span-2 lg:col-span-1">
+                    <video src="/paravidgugu.mp4" className="w-full h-auto" controls playsInline />
+                  </div>
+                </div>
+              </section>
             </div>
 
             <div className="lg:col-span-1">
