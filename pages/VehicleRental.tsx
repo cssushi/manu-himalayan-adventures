@@ -63,6 +63,15 @@ const VehicleRental: React.FC = () => {
           </div>
         </div>
 
+        {/* Additional Bike Images */}
+        <section className="mb-16">
+          <h3 className="text-2xl font-bold text-stone-800 mb-6">Our Bike Fleet</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src={IMAGES.bike1} alt="Bike Fleet 1" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+            <img src={IMAGES.bike2} alt="Bike Fleet 2" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+          </div>
+        </section>
+
         {/* Policy Section */}
         <div className="bg-white rounded-2xl shadow-sm p-8 md:p-12">
            <h3 className="text-2xl font-bold text-stone-800 mb-8 text-center">Rental Policy & Requirements</h3>

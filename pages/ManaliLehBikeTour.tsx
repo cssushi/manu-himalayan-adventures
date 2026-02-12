@@ -43,6 +43,13 @@ const ManaliLehBikeTour: React.FC = () => {
             </section>
 
             <section className="bg-white p-8 rounded-3xl shadow-sm border border-stone-100">
+              <h3 className="text-2xl font-bold text-stone-800 mb-6">Your Bike Adventure</h3>
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
+                <img src={IMAGES.bike1} alt="Bike Adventure" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+              </div>
+            </section>
+
+            <section className="bg-white p-8 rounded-3xl shadow-sm border border-stone-100">
               <h3 className="text-2xl font-bold text-stone-800 mb-6">What's Included</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex gap-3 items-start bg-green-50 p-4 rounded-xl border border-green-100">

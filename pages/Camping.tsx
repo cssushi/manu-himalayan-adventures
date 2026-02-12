@@ -61,6 +61,13 @@ const Camping: React.FC = () => {
                 </div>
            </div>
 
+           <div className="h-80 rounded-3xl overflow-hidden shadow-lg relative group">
+             <img src={IMAGES.camping1} alt="Camping Experience" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <div className="absolute bottom-0 left-0 p-6 bg-gradient-to-t from-black/70 to-transparent w-full">
+               <p className="text-white font-bold">Camping Experience</p>
+                </div>
+           </div>
+
            <div className="h-80 rounded-3xl overflow-hidden shadow-lg relative bg-white flex flex-col items-center justify-center text-center p-8 border-2 border-stone-200">
                 <h3 className="text-3xl font-serif font-bold text-forest-700 mb-4">Book Your Stay</h3>
                 <p className="text-stone-700 mb-8 max-w-xs">Includes Dinner, Breakfast, Snacks, and Activities.</p>

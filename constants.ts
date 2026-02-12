@@ -48,13 +48,27 @@ export const IMAGES = {
   tent_inside: "/14.jpeg",
   skyView: "/15.jpeg",
   mountainView: "/18.jpeg",
-  adventureGroup: "/19.jpeg",
-  sunsetView: "/22.jpeg",
 
   // Logo
   logo: "/new_logo.png",
   // Manali-Leh trip image
-  manaliLeh: "/manali_leh_trip.jpeg"
+  manaliLeh: "/manali_leh_trip.jpeg",
+
+  // New Activity Images
+  balloon1: "/balloon1.png",
+  balloon2: "/balloon2.png",
+  bike1: "/bike1.png",
+  bike2: "/bike2.png",
+  bungee1: "/bungee1.png",
+  bungee2: "/bungee2.png",
+  camping1: "/camping1.jpeg",
+  para1: "/para1.png",
+  para2: "/para2.png",
+  rafting1: "/rafting1.png",
+  rafting2: "/rafting2.png",
+  rafting3: "/rafting3.png",
+  zipline1: "/zipline1.png",
+  zipline2: "/zipline2.png"
 };
 
 // Reviews

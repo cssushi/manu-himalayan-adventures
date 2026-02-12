@@ -7,7 +7,6 @@ const Gallery: React.FC = () => {
     { src: IMAGES.snowmobile, size: 'large', label: 'Camping' },
     { src: IMAGES.camping, size: 'tall', label: 'Cozy Interiors' },
     { src: IMAGES.rafting, size: 'wide', label: 'White Water Rafting' },
-    { src: IMAGES.bungee, size: 'large', label: 'Bungee Jump' },
     { src: IMAGES.zipline, size: 'wide', label: 'Zipline Crossing' },
     { src: IMAGES.paragliding, size: 'tall', label: 'High Fly Paragliding' },
     { src: IMAGES.temple, size: 'small', label: 'Krishna Temple' },
@@ -17,8 +16,14 @@ const Gallery: React.FC = () => {
     { src: IMAGES.safetyGear, size: 'small', label: 'Paragliding' },
     { src: IMAGES.skyView, size: 'wide', label: 'Night at Camp' },
     { src: IMAGES.mountainView, size: 'tall', label: 'Lounge' },
-    { src: IMAGES.adventureGroup, size: 'large', label: 'Adventure Group' },
     { src: IMAGES.bike, size: 'small', label: 'Bike Rentals' },
+    { src: IMAGES.para1, size: 'wide', label: 'Paragliding Adventure' },
+    { src: IMAGES.para2, size: 'tall', label: 'Aerial Views' },
+    { src: IMAGES.rafting1, size: 'tall', label: 'White Water Thrills' },
+    { src: IMAGES.rafting2, size: 'large', label: 'River Adventure' },
+    { src: IMAGES.rafting3, size: 'wide', label: 'Rapids Challenge' },
+    { src: IMAGES.zipline1, size: 'large', label: 'Zipline Adrenaline' },
+    { src: IMAGES.zipline2, size: 'tall', label: 'Forest Zipline' },
   ];
 
   return (

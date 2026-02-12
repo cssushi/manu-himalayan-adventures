@@ -11,7 +11,7 @@ const BungeeJumping: React.FC = () => {
         
         <div className="bg-white rounded-3xl shadow-xl overflow-hidden mb-8">
            <div className="relative h-96">
-              <img src={IMAGES.bungee} alt="Bungee Jumping" className="absolute inset-0 w-full h-full object-cover" />
+              <img src={IMAGES.bungee1} alt="Bungee Jumping" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-8 left-8 text-white">
                 <h2 className="text-3xl font-bold mb-2">Kothi Manali Bungee</h2>
@@ -52,6 +52,15 @@ const BungeeJumping: React.FC = () => {
                >
                  Book Now via Contact
                </Link>
+             </div>
+
+             {/* Bungee Images Gallery */}
+             <div className="mt-12">
+               <h3 className="text-2xl font-bold text-stone-800 mb-6">Experience the Jump</h3>
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                 <img src="/10.jpeg" alt="Bungee Jump Experience 1" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+                 <img src={IMAGES.bungee2} alt="Bungee Jump Experience 2" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+               </div>
              </div>
            </div>
 

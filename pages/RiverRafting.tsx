@@ -49,6 +49,15 @@ const RiverRafting: React.FC = () => {
             </section>
 
             <section className="bg-white p-8 rounded-2xl shadow-sm">
+              <h3 className="text-xl font-bold text-stone-800 mb-6">Rafting Moments</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <img src={IMAGES.rafting1} alt="Rafting Experience 1" className="w-full h-80 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+                <img src={IMAGES.rafting2} alt="Rafting Experience 2" className="w-full h-80 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+                <img src={IMAGES.rafting3} alt="Rafting Experience 3" className="w-full h-80 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow col-span-1 md:col-span-2" />
+              </div>
+            </section>
+
+            <section className="bg-white p-8 rounded-2xl shadow-sm">
               <h3 className="text-xl font-bold text-stone-800 mb-6">Why Choose Us?</h3>
               <ul className="space-y-3">
                  <li className="flex items-start gap-2">

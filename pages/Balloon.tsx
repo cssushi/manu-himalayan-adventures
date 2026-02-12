@@ -6,7 +6,7 @@ const Balloon: React.FC = () => {
   return (
     <div className="min-h-screen bg-stone-50">
       <div className="relative h-[60vh] w-full">
-        <img src={IMAGES.paragliding} alt="Hot Air Balloon" className="w-full h-full object-cover" />
+        <img src={IMAGES.balloon2} alt="Hot Air Balloon" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-white drop-shadow-lg text-center">Hot Air Balloon Rides</h1>
         </div>
@@ -34,6 +34,13 @@ const Balloon: React.FC = () => {
                 <li>Safety briefing and pilot demonstration</li>
                 <li>Transport included from Manali</li>
               </ul>
+            </section>
+
+            <section className="bg-white p-8 rounded-3xl shadow-sm">
+              <h3 className="text-2xl font-bold text-stone-800 mb-6">Experience in Pictures</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <img src={IMAGES.balloon1} alt="Balloon Experience 1" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+              </div>
             </section>
           </div>
 

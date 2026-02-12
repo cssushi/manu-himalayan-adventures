@@ -37,6 +37,15 @@ const Zipline: React.FC = () => {
                  Book Zipline
              </Link>
            </div>
+
+           {/* Zipline Images Gallery */}
+           <div className="p-12">
+             <h3 className="text-2xl font-bold text-stone-800 mb-6 text-center">Experience the Thrill</h3>
+             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+               <img src={IMAGES.zipline1} alt="Zipline Experience 1" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+               <img src={IMAGES.zipline2} alt="Zipline Experience 2" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
+             </div>
+           </div>
         </div>
       </div>
     </div>
