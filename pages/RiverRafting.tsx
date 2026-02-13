@@ -82,12 +82,12 @@ const RiverRafting: React.FC = () => {
 
           {/* Sidebar */}
           <div className="md:col-span-1 space-y-6">
-            <div className="bg-blue-800 text-white p-6 rounded-2xl shadow-lg sticky top-24">
+            <div className="bg-sky-900/90 text-white p-6 rounded-2xl shadow-lg sticky top-24">
               <h3 className="text-xl font-bold mb-4">Book Your Raft</h3>
               <p className="mb-6 text-white text-sm">March to June is the best season! Slots fill up fast.</p>
               <Link 
                 to="/contact"
-                className="block w-full bg-green-700 hover:bg-green-800 text-white text-center font-bold py-3 rounded-xl transition-colors mb-4"
+                className="block w-full bg-emerald-700 hover:bg-emerald-800 text-white text-center font-bold py-3 rounded-xl transition-colors mb-4"
               >
                 Book via Contact
               </Link>
