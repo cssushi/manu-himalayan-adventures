@@ -10,6 +10,18 @@ const Navbar: React.FC = () => {
 
   const closeMenu = () => setIsOpen(false);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
@@ -84,7 +96,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Overlay (fully opaque, fills viewport) */}
         <div className={`fixed inset-0 z-50 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} xl:hidden`}>
-          <div className="flex flex-col space-y-4 bg-earth-900/95 min-h-screen p-6 w-full">
+          <div className="flex flex-col space-y-4 bg-earth-900/95 min-h-screen p-6 w-full overflow-y-auto">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.path}
