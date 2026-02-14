@@ -66,7 +66,7 @@ const Packages: React.FC = () => {
                     <span className="font-bold text-stone-800 text-lg">₹1,000</span>
                   </div>
                   <div className="flex justify-between items-start">
-                    <span className="text-stone-800 font-bold">Group River Rafting (Full Boat: Upto 6 People)</span>
+                    <span className="text-stone-800 font-bold">Group River Rafting (Full Boat: Upto 8 People)</span>
                     <span className="font-bold text-stone-800 text-lg">₹4,500</span>
                   </div>
                   <div className="flex justify-between items-start">

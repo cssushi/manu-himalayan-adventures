@@ -61,11 +61,11 @@ const Home: React.FC = () => {
       </div>
 
       {/* 2. Complex Grid "Bento Box" Navigation */}
-      <section className="py-20 px-4 max-w-[1440px] mx-auto -mt-20 relative z-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4 h-auto md:h-[800px]">
+      <section className="py-32 px-6 lg:px-12 max-w-full -mt-20 relative z-20">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-max w-full">
           
           {/* Main Large Card - Rafting */}
-          <Link to="/river-rafting" className="group md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden shadow-2xl cursor-pointer">
+          <Link to="/river-rafting" className="group md:col-span-2 md:row-span-2 relative rounded-3xl overflow-hidden shadow-2xl cursor-pointer h-96 md:h-full">
             <img src={IMAGES.rafting} alt="Rafting" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
             <div className="absolute bottom-0 left-0 p-8">
@@ -78,7 +78,7 @@ const Home: React.FC = () => {
           </Link>
 
           {/* Paragliding */}
-          <Link to="/paragliding" className="group md:col-span-2 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer">
+          <Link to="/paragliding" className="group md:col-span-2 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.paragliding} alt="Paragliding" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors"></div>
             <div className="absolute bottom-6 left-6">
@@ -90,7 +90,7 @@ const Home: React.FC = () => {
           </Link>
 
           {/* Camping */}
-          <Link to="/camping" className="group md:col-span-1 md:row-span-2 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer bg-moss-900">
+          <Link to="/camping" className="group md:col-span-1 md:row-span-2 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer bg-moss-900 h-96 md:h-full">
             <img src={IMAGES.camping} alt="Camping" className="absolute inset-0 w-full h-full object-cover opacity-60 transition-opacity group-hover:opacity-40" />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4 border border-white/10 m-2 rounded-2xl">
               <Star className="text-clay-500 mb-4" size={32} />
@@ -100,29 +100,65 @@ const Home: React.FC = () => {
           </Link>
 
           {/* Bike Rental */}
-          <Link to="/vehicle-rental" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer">
+          <Link to="/vehicle-rental" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.bike} alt="Bike Rental" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
             <div className="absolute bottom-4 left-4">
               <h3 className="text-xl font-serif font-bold text-white">Moto Rentals</h3>
             </div>
           </Link>
-          
-           {/* More Adventures Link */}
-          <Link to="/adventure-sports" className="group md:col-span-1 md:row-span-1 bg-clay-500 rounded-3xl flex flex-col justify-center items-center p-6 text-center hover:bg-clay-700 transition-colors shadow-xl text-white">
-             <span className="font-serif text-3xl font-bold mb-2">+10</span>
-             <span className="text-xs uppercase tracking-widest">More Activities</span>
-             <div className="mt-4 w-10 h-10 rounded-full border border-white/30 flex items-center justify-center group-hover:bg-white group-hover:text-clay-700 transition-all">
-               <ArrowRight size={16} />
-             </div>
+
+          {/* Bungee Jumping */}
+          <Link to="/bungee-jumping" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
+            <img src={IMAGES.bungee} alt="Bungee" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute bottom-4 left-4">
+              <h3 className="text-xl font-serif font-bold text-white">Bungee Jump</h3>
+            </div>
           </Link>
-           
-           {/* Hotel Stay */}
-           <Link to="/hotel-stay" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer">
+
+          {/* Zipline */}
+          <Link to="/zipline" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
+            <img src={IMAGES.zipline} alt="Zipline" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute bottom-4 left-4">
+              <h3 className="text-xl font-serif font-bold text-white">Zipline</h3>
+            </div>
+          </Link>
+
+          {/* Hot Air Balloon */}
+          <Link to="/balloon" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
+            <img src={IMAGES.balloon2} alt="Balloon" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute bottom-4 left-4">
+              <h3 className="text-xl font-serif font-bold text-white">Balloon Ride</h3>
+            </div>
+          </Link>
+
+          {/* Hotel Stay */}
+          <Link to="/hotel-stay" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.hotel} alt="Hotel" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
             <div className="absolute bottom-4 left-4">
               <h3 className="text-xl font-serif font-bold text-white">Luxury Stays</h3>
+            </div>
+          </Link>
+
+          {/* Sightseeing */}
+          <Link to="/sightseeing" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
+            <img src={IMAGES.temple} alt="Sightseeing" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute bottom-4 left-4">
+              <h3 className="text-xl font-serif font-bold text-white">Sightseeing</h3>
+            </div>
+          </Link>
+
+          {/* Treks */}
+          <Link to="/trekking-camping" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
+            <img src={IMAGES.malana3} alt="Treks" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute bottom-4 left-4">
+              <h3 className="text-xl font-serif font-bold text-white">Treks</h3>
             </div>
           </Link>
 
