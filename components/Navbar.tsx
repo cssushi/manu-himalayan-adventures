@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Phone } from 'lucide-react';
-import { NAV_LINKS, PHONE_DISPLAY, IMAGES } from '../constants';
+import { NAV_LINKS, IMAGES } from '../constants';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -118,16 +118,6 @@ const Navbar: React.FC = () => {
                   {link.name}
                 </Link>
               ))}
-            </div>
-
-            <div className="p-6 pt-3 border-t border-earth-800 bg-earth-900/95">
-              <Link
-                to="/contact"
-                onClick={closeMenu}
-                className="w-full flex justify-center items-center gap-2 bg-moss-700 text-white py-4 rounded-xl font-bold uppercase tracking-widest"
-              >
-                Call: {PHONE_DISPLAY}
-              </Link>
             </div>
           </div>
       </div>
