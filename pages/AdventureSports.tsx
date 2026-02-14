@@ -107,6 +107,19 @@ const AdventureSports: React.FC = () => {
                <div className="px-6 pb-6 text-forest-600 font-bold flex items-center gap-2">View Details &rarr;</div>
              </div>
            </Link>
+
+           <Link to="/packages" className="group">
+             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
+               <div className="h-64 overflow-hidden relative bg-gradient-to-br from-purple-500 to-green-500 flex items-center justify-center">
+                 <img src={IMAGES.logo} alt="Adventure Packages Logo" className="w-32 h-32 rounded-full border-4 border-white" />
+               </div>
+               <div className="p-6 flex-grow">
+                 <h3 className="text-xl font-bold text-stone-800 mb-2">Adventure Packages</h3>
+                 <p className="text-stone-600 text-sm">Curated package combinations with exclusive 20% discounts on bundled adventures.</p>
+               </div>
+               <div className="px-6 pb-6 text-forest-600 font-bold flex items-center gap-2">View Packages &rarr;</div>
+             </div>
+           </Link>
         </div>
       </div>
     </div>

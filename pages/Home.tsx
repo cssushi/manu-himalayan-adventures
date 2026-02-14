@@ -12,8 +12,8 @@ const Home: React.FC = () => {
       <div className="relative h-screen w-full overflow-hidden">
         {/* Parallax Background */}
         <div 
-          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat bg-fixed transform scale-105"
-          style={{ backgroundImage: `url(${IMAGES.hero})` }}
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${IMAGES.homeback})`, backgroundAttachment: 'fixed', backgroundSize: 'cover' }}
         ></div>
         
         {/* Overlay with Grain Texture */}

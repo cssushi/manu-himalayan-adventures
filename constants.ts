@@ -16,6 +16,7 @@ export const BOOKING_LINK = "https://www.booking.com/";
 export const IMAGES = {
   // Use local files from public root
   hero: "/Manali_in_winters.png",
+  homeback: "/homeback.jpeg",
   // Action rafting (keep local video/poster)
   rafting: "/24.jpeg",
   // Paragliding: use local paraback and images 4 & 5
@@ -72,7 +73,16 @@ export const IMAGES = {
   rockland1: "/rockland1.jpeg",
   rockland2: "/rockland2.jpeg",
   rockland3: "/rockland3.jpeg",
-  rockland4: "/rockland4.jpeg"
+  rockland4: "/rockland4.jpeg",
+  bhrigu1: "/bhrigu1.jpeg",
+  bhrigu2: "/bhrigu2.jpeg",
+  bhrigu3: "/bhrigu3.jpeg",
+  bijli1: "/bijli1.jpeg",
+  bijli2: "/bijli2.jpeg",
+  bijli3: "/bijli3.jpeg",
+  malana1: "/malana1.jpeg",
+  malana2: "/malana2.jpeg",
+  malana3: "/malana3.jpeg"
 };
 
 // Reviews
@@ -112,6 +122,7 @@ export const NAV_LINKS = [
   { name: "Bungee", path: "/bungee-jumping" },
   { name: "Balloon", path: "/balloon" },
   { name: "Sightseeing", path: "/sightseeing" },
+  { name: "Treks", path: "/trekking-camping" },
   { name: "Packages", path: "/packages" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
