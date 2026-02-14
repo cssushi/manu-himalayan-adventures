@@ -12,13 +12,17 @@ const Navbar: React.FC = () => {
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
+    const root = document.documentElement;
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      root.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'unset';
+      root.style.overflow = 'unset';
     }
     return () => {
       document.body.style.overflow = 'unset';
+      root.style.overflow = 'unset';
     };
   }, [isOpen]);
 
@@ -96,29 +100,36 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu Overlay (fully opaque, fills viewport) */}
         <div className={`fixed inset-0 z-50 transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} xl:hidden`}>
-          <div className="flex flex-col space-y-4 bg-earth-900/95 min-h-screen p-6 w-full overflow-y-auto">
-            {NAV_LINKS.map((link) => (
+          <div className="bg-earth-900/95 h-[100dvh] w-full flex flex-col overflow-hidden">
+            <div className="flex items-center justify-end p-4 border-b border-earth-800">
+              <button onClick={closeMenu} className="text-white p-2" aria-label="Close menu">
+                <X size={32} />
+              </button>
+            </div>
+
+            <div className="flex-1 overflow-y-auto p-6 space-y-4 overscroll-contain" style={{ WebkitOverflowScrolling: 'touch' }}>
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={closeMenu}
+                  className="block text-2xl font-serif font-bold text-earth-100 hover:text-clay-500 transition-colors border-b border-earth-800 pb-2"
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+
+            <div className="p-6 pt-3 border-t border-earth-800 bg-earth-900/95">
               <Link
-                key={link.path}
-                to={link.path}
+                to="/contact"
                 onClick={closeMenu}
-                className="text-2xl font-serif font-bold text-earth-100 hover:text-clay-500 transition-colors border-b border-earth-800 pb-2"
+                className="w-full flex justify-center items-center gap-2 bg-moss-700 text-white py-4 rounded-xl font-bold uppercase tracking-widest"
               >
-                {link.name}
+                Call: {PHONE_DISPLAY}
               </Link>
-            ))}
-            <Link
-              to="/contact"
-              onClick={closeMenu}
-              className="mt-8 flex justify-center items-center gap-2 bg-moss-700 text-white py-4 rounded-xl font-bold uppercase tracking-widest"
-            >
-              Call: {PHONE_DISPLAY}
-            </Link>
+            </div>
           </div>
-          
-          <button onClick={closeMenu} className="absolute top-6 right-6 text-white p-2">
-            <X size={32} />
-          </button>
       </div>
     </nav>
   );
