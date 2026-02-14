@@ -45,6 +45,18 @@ const Home: React.FC = () => {
             </span>
             <div className="absolute inset-0 bg-moss-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
           </Link>
+
+          {/* Packages CTA */}
+          <Link
+            to="/packages"
+            className="group relative px-10 py-5 bg-clay-600 text-white font-bold rounded-full overflow-hidden transition-all hover:scale-105 animate-fade-up shadow-[0_0_20px_rgba(193,100,68,0.5)] border-2 border-clay-500 mt-6"
+            style={{ animationDelay: '0.4s' }}
+          >
+            <span className="relative z-10 flex items-center gap-2 uppercase tracking-widest text-sm">
+              View Packages <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+            </span>
+            <div className="absolute inset-0 bg-clay-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+          </Link>
         </div>
       </div>
 

@@ -19,7 +19,7 @@ const Packages: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* River Rafting + Paragliding Package */}
           <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-green-200">
             <div className="bg-gradient-to-r from-green-400 to-green-600 p-8 text-white">
@@ -66,21 +66,98 @@ const Packages: React.FC = () => {
                     <span className="font-bold text-stone-800">₹1,000</span>
                   </div>
                   <div className="flex justify-between items-center">
+                    <span className="text-stone-700">Group River Rafting (5 People)</span>
+                    <span className="font-bold text-stone-800">₹4,500</span>
+                  </div>
+                  <div className="flex justify-between items-center">
                     <span className="text-stone-700">Paragliding</span>
-                    <span className="font-bold text-stone-800">₹2,800 <span className="text-sm text-green-600">(20% off)</span></span>
+                    <span className="font-bold text-stone-800">₹2,800</span>
                   </div>
-                  <div className="border-t border-stone-300 pt-3 mt-3">
-                    <div className="flex justify-between items-center">
-                      <span className="font-bold text-stone-800">Combo Price 5 people (River Rafting)</span>
-                      <span className="text-2xl font-bold text-green-600">₹3,800</span>
-                    </div>
-                  </div>
+                </div>
+              </div>
+
+              <div className="bg-green-50 p-6 rounded-2xl mb-8 border border-green-200">
+                <h4 className="font-bold text-green-800 mb-4 text-lg">Total Savings: 20% OFF</h4>
+                <div className="space-y-2">
+                  <p className="text-2xl font-bold text-green-600">Package Price: ₹3800</p>
                 </div>
               </div>
 
               <Link 
                 to="/contact"
                 className="block w-full bg-green-600 hover:bg-green-700 text-white text-center font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl"
+              >
+                Book This Package
+              </Link>
+            </div>
+          </div>
+
+          {/* Ultimate Adventure Package */}
+          <div className="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 border-2 border-purple-200 relative">
+            <div className="absolute top-4 right-4 bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-bold flex items-center gap-2 pointer-events-none">
+              <Zap size={16} /> Ultimate
+            </div>
+            
+            <div className="bg-gradient-to-r from-purple-400 to-purple-600 p-8 pt-14 text-white">
+              <div className="flex items-center gap-3 mb-4">
+                <Gift size={32} />
+                <h3 className="text-2xl font-bold">Ultimate Adventure</h3>
+              </div>
+              <p className="text-purple-100">All thrills in one epic weekend</p>
+            </div>
+
+            <div className="p-8">
+              <div className="mb-8">
+                <h4 className="text-lg font-bold text-stone-800 mb-4">What's Included:</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-600 font-bold">✓</span>
+                    <div>
+                      <p className="font-bold text-stone-800">River Rafting</p>
+                      <p className="text-sm text-stone-600">Solo: ₹1,000 | Group: ₹4,500</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-600 font-bold">✓</span>
+                    <div>
+                      <p className="font-bold text-stone-800">Paragliding</p>
+                      <p className="text-sm text-stone-600">₹3,000</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-600 font-bold">✓</span>
+                    <div>
+                      <p className="font-bold text-stone-800">Bungee Jumping</p>
+                      <p className="text-sm text-stone-600">Solo: ₹4,000 | Group: ₹7,000</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-600 font-bold">✓</span>
+                    <div>
+                      <p className="font-bold text-stone-800">Zipline</p>
+                      <p className="text-sm text-stone-600">₹700</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-600 font-bold">✓</span>
+                    <div>
+                      <p className="font-bold text-stone-800">Camping & Trekking</p>
+                      <p className="text-sm text-stone-600">₹5,000</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-purple-50 p-6 rounded-2xl mb-8 border border-purple-200">
+                <h4 className="font-bold text-purple-800 mb-4 text-lg">Total Savings: 20% OFF</h4>
+                <div className="space-y-2">
+                  <p className="text-2xl font-bold text-purple-600">Package Price: ₹13,700</p>
+                </div>
+              </div>
+
+              <Link 
+                to="/contact"
+                className="block w-full bg-purple-600 hover:bg-purple-700 text-white text-center font-bold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl"
               >
                 Book This Package
               </Link>
