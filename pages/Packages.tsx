@@ -37,14 +37,14 @@ const Packages: React.FC = () => {
                   <li className="flex items-start gap-3">
                     <span className="text-green-600 font-bold">✓</span>
                     <div>
-                      <p className="font-bold text-stone-800">River Rafting (Solo)</p>
+                      <p className="font-bold text-stone-800">River Rafting (Per Person)</p>
                       <p className="text-sm text-stone-600">13km white water adventure</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-green-600 font-bold">✓</span>
                     <div>
-                      <p className="font-bold text-stone-800">Paragliding (Solo)</p>
+                      <p className="font-bold text-stone-800">Paragliding (Per Person)</p>
                       <p className="text-sm text-stone-600">8-10 min tandem flight with certified pilot</p>
                     </div>
                   </li>
@@ -52,7 +52,7 @@ const Packages: React.FC = () => {
                     <span className="text-green-600 font-bold">✓</span>
                     <div>
                       <p className="font-bold text-stone-800">Full Group River Rafting Combo</p>
-                      <p className="text-sm text-stone-600">Perfect for 5 people</p>
+                      <p className="text-sm text-stone-600">Perfect for groups</p>
                     </div>
                   </li>
                 </ul>
@@ -61,17 +61,21 @@ const Packages: React.FC = () => {
               <div className="bg-stone-50 p-6 rounded-2xl mb-8 border border-stone-200">
                 <h4 className="font-bold text-stone-800 mb-4 text-lg">Pricing</h4>
                 <div className="space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-stone-700">River Rafting</span>
-                    <span className="font-bold text-stone-800">₹1,000</span>
+                  <div className="flex justify-between items-start">
+                    <span className="text-stone-800 font-bold">River Rafting (Per Person)</span>
+                    <span className="font-bold text-stone-800 text-lg">₹1,000</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-stone-700">Group River Rafting (5 People)</span>
-                    <span className="font-bold text-stone-800">₹4,500</span>
+                  <div className="flex justify-between items-start">
+                    <span className="text-stone-800 font-bold">Group River Rafting (Full Boat: Upto 6 People)</span>
+                    <span className="font-bold text-stone-800 text-lg">₹4,500</span>
                   </div>
-                  <div className="flex justify-between items-center">
-                    <span className="text-stone-700">Paragliding</span>
-                    <span className="font-bold text-stone-800">₹2,800</span>
+                  <div className="flex justify-between items-start">
+                    <span className="text-stone-800 font-bold">Paragliding (Per Person)</span>
+                    <span className="font-bold text-stone-800 text-lg">₹2,800</span>
+                  </div>
+                  <div className="flex justify-between items-start">
+                    <span className="text-stone-800 font-bold">Group Paragliding (5 People)</span>
+                    <span className="font-bold text-stone-800 text-lg">₹12,600</span>
                   </div>
                 </div>
               </div>
@@ -101,7 +105,9 @@ const Packages: React.FC = () => {
             <div className="bg-gradient-to-r from-purple-400 to-purple-600 p-8 pt-14 text-white">
               <div className="flex items-center gap-3 mb-4">
                 <Gift size={32} />
-                <h3 className="text-2xl font-bold">Ultimate Adventure</h3>
+                <h3 className=
+                
+                "text-2xl font-bold">Ultimate Adventure</h3>
               </div>
               <p className="text-purple-100">All thrills in one epic weekend</p>
             </div>
@@ -120,15 +126,22 @@ const Packages: React.FC = () => {
                   <li className="flex items-start gap-3">
                     <span className="text-purple-600 font-bold">✓</span>
                     <div>
-                      <p className="font-bold text-stone-800">Paragliding</p>
-                      <p className="text-sm text-stone-600">₹3,000</p>
+                      <p className="font-bold text-stone-800">Paragliding (Per Person)</p>
+                      <p className="text-sm text-stone-600">₹2,800</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-600 font-bold">✓</span>
+                    <div>
+                      <p className="font-bold text-stone-800">Group Paragliding (5 People)</p>
+                      <p className="text-sm text-stone-600">₹12,600</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-purple-600 font-bold">✓</span>
                     <div>
                       <p className="font-bold text-stone-800">Bungee Jumping</p>
-                      <p className="text-sm text-stone-600">Solo: ₹4,000 | Group: ₹7,000</p>
+                      <p className="text-sm text-stone-600">Solo: ₹4,000 | Couple: ₹7,000</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
