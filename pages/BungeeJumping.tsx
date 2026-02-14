@@ -31,6 +31,20 @@ const BungeeJumping: React.FC = () => {
                Feel the adrenaline rush as you jump into the scenic valley backdrop.
              </p>
 
+             <section className="bg-amber-50 p-6 rounded-2xl border-2 border-amber-200 mb-8">
+               <h3 className="font-bold text-stone-800 mb-4 text-center text-lg">Pricing</h3>
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                 <div className="text-center">
+                   <p className="text-stone-700 mb-2">Solo</p>
+                   <p className="text-2xl font-bold text-amber-600">₹4,500</p>
+                 </div>
+                 <div className="text-center">
+                   <p className="text-stone-700 mb-2">Couple</p>
+                   <p className="text-2xl font-bold text-amber-600">₹8,000</p>
+                 </div>
+               </div>
+             </section>
+
              <div className="border-t border-stone-100 pt-8 mb-8">
                 <h3 className="font-bold text-stone-800 mb-6 text-center">Traveler Reviews</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -70,7 +84,7 @@ const BungeeJumping: React.FC = () => {
              <a href="https://maps.app.goo.gl/hYYywUge45rYpFiz7" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-2xl shadow-md p-12 border-2 border-stone-300 hover:shadow-lg hover:border-forest-400 transition-all mb-6">
                <div className="flex items-center justify-between">
                  <div>
-                   <h4 className="text-2xl font-bold text-stone-800 mb-3">Atal Bihari Vajpayee Bridge - Bungee Point</h4>
+                   <h4 className="text-2xl font-bold text-stone-800 mb-3">Bungee Point</h4>
                    <p className="text-stone-600 text-base">Raison River, Aut Valley</p>
                  </div>
                  <div className="text-forest-600">

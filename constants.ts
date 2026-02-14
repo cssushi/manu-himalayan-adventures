@@ -35,7 +35,7 @@ export const IMAGES = {
   // 4x4 / Vehicle - use local jimny image
   jimny: "/jimny.jpg",
   // Wooden hotel room
-  hotel: "/20.jpeg",
+  hotel: "/rocklandback.jpeg",
   // Waterfall (Jana Waterfall) - use local uploaded file
   waterfall: "/janafinal.jpeg",
   // Krishna Temple
@@ -68,7 +68,11 @@ export const IMAGES = {
   rafting2: "/rafting2.png",
   rafting3: "/rafting3.png",
   zipline1: "/zipline1.png",
-  zipline2: "/zipline2.png"
+  zipline2: "/zipline2.png",
+  rockland1: "/rockland1.jpeg",
+  rockland2: "/rockland2.jpeg",
+  rockland3: "/rockland3.jpeg",
+  rockland4: "/rockland4.jpeg"
 };
 
 // Reviews
@@ -101,14 +105,14 @@ export const NAV_LINKS = [
   { name: "Home", path: "/" },
   { name: "Rafting", path: "/river-rafting" },
   { name: "Paragliding", path: "/paragliding" },
-  { name: "Camping", path: "/camping" },
+  { name: "Riverside Camping", path: "/camping" },
   { name: "Rentals", path: "/vehicle-rental" },
-  { name: "Stays", path: "/hotel-stay" },
+  { name: "Hotel", path: "/hotel-stay" },
   { name: "Zipline", path: "/zipline" },
   { name: "Bungee", path: "/bungee-jumping" },
   { name: "Balloon", path: "/balloon" },
-  { name: "Manali-Leh", path: "/manali-leh-bike" },
   { name: "Sightseeing", path: "/sightseeing" },
+  { name: "Packages", path: "/packages" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
 ];

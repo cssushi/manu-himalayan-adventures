@@ -28,8 +28,12 @@ const Contact: React.FC = () => {
               <div className="bg-green-100 p-3 rounded-full text-green-700 mb-3">
                 <Phone size={20} />
               </div>
-              <h3 className="font-bold text-stone-800 mb-1">Phone / WhatsApp</h3>
-              <p className="text-stone-600">{PHONE_DISPLAY}</p>
+              <h3 className="font-bold text-stone-800 mb-2">Phone / WhatsApp</h3>
+              <div className="space-y-1">
+                <p className="text-stone-600">{PHONE_DISPLAY}</p>
+                <p className="text-stone-600">+91 9459994020</p>
+                <p className="text-stone-600">+91 7037617755</p>
+              </div>
             </div>
 
             <div className="flex flex-col items-start">

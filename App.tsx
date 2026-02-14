@@ -13,6 +13,7 @@ import Camping from './pages/Camping';
 import VehicleRental from './pages/VehicleRental';
 import HotelStay from './pages/HotelStay';
 import Sightseeing from './pages/Sightseeing';
+import Packages from './pages/Packages';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Balloon from './pages/Balloon';
@@ -81,6 +82,7 @@ const App: React.FC = () => {
             <Route path="/vehicle-rental" element={<VehicleRental />} />
             <Route path="/hotel-stay" element={<HotelStay />} />
             <Route path="/sightseeing" element={<Sightseeing />} />
+            <Route path="/packages" element={<Packages />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

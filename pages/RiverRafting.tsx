@@ -40,6 +40,20 @@ const RiverRafting: React.FC = () => {
               </div>
             </section>
 
+            <section className="bg-white p-8 rounded-2xl shadow-sm">
+              <h3 className="text-xl font-bold text-stone-800 mb-6">Pricing</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-amber-50 p-6 rounded-2xl border-2 border-amber-200">
+                  <h4 className="font-bold text-stone-800 mb-2">Solo</h4>
+                  <p className="text-2xl font-bold text-amber-600">₹1,200</p>
+                </div>
+                <div className="bg-amber-50 p-6 rounded-2xl border-2 border-amber-200">
+                  <h4 className="font-bold text-stone-800 mb-2">Group</h4>
+                  <p className="text-2xl font-bold text-amber-600">₹6,000</p>
+                </div>
+              </div>
+            </section>
+
             {/* Video player: make the rafting video viewable (controls) rather than autoplay hero */}
             <section className="bg-white p-8 rounded-2xl shadow-sm">
               <h3 className="text-xl font-bold text-stone-800 mb-4">Rafting: Watch a Short Clip</h3>

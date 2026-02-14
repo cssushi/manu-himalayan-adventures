@@ -34,8 +34,8 @@ const Paragliding: React.FC = () => {
                     <p className="text-stone-600">8 - 10 Mins</p>
                   </div>
                    <div className="bg-stone-50 p-6 rounded-2xl">
-                    <h4 className="font-bold text-stone-800 mb-1">Type</h4>
-                    <p className="text-stone-600">Tandem Flight</p>
+                    <h4 className="font-bold text-stone-800 mb-1">Price</h4>
+                    <p className="text-stone-600">₹3,500</p>
                   </div>
                 </div>
               </section>

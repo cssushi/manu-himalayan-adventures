@@ -31,6 +31,28 @@ const Camping: React.FC = () => {
                <h3 className="font-bold text-xl text-stone-800 mb-2">Music & Vibes</h3>
                <p className="text-stone-600">Light music to set the mood. Dance or just relax to the acoustic tunes.</p>
             </div>
+            <div className="bg-amber-50 p-8 rounded-3xl shadow-sm border-2 border-amber-200 flex flex-col items-center text-center">
+               <h3 className="font-bold text-xl text-stone-800 mb-4">Price</h3>
+               <p className="text-3xl font-bold text-amber-600">₹6,000</p>
+            </div>
+        </div>
+
+        {/* Original Highlights */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16" style={{display: 'none'}}>
+            <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center">
+               <div className="bg-orange-100 p-4 rounded-full text-orange-600 mb-6">
+                  <Flame size={32} />
+               </div>
+               <h3 className="font-bold text-xl text-stone-800 mb-2">Bonfire Night</h3>
+               <p className="text-stone-600">Gather around a warm fire under the open sky. Share stories and enjoy the warmth.</p>
+            </div>
+            <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center">
+               <div className="bg-purple-100 p-4 rounded-full text-purple-600 mb-6">
+                  <Music size={32} />
+               </div>
+               <h3 className="font-bold text-xl text-stone-800 mb-2">Music & Vibes</h3>
+               <p className="text-stone-600">Light music to set the mood. Dance or just relax to the acoustic tunes.</p>
+            </div>
             <div className="bg-white p-8 rounded-3xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center">
                <div className="bg-blue-100 p-4 rounded-full text-blue-600 mb-6">
                   <Footprints size={32} />
@@ -79,6 +101,12 @@ const Camping: React.FC = () => {
                </Link>
            </div>
         </div>
+
+        {/* Video Tour */}
+        <section className="bg-white p-8 rounded-2xl shadow-sm">
+           <h3 className="font-bold text-stone-800 mb-4">Camp Video</h3>
+           <video src="/11.mp4" controls className="max-w-2xl rounded-xl" playsInline />
+        </section>
       </div>
     </div>
   );

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IMAGES } from '../constants';
-import ActivityCard from '../components/ActivityCard';
 
 const AdventureSports: React.FC = () => {
   return (

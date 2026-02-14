@@ -30,16 +30,10 @@ const Zipline: React.FC = () => {
                <span>• Kids Friendly</span>
              </div>
 
-             <Link 
-                 to="/contact"
-                 className="inline-block bg-amber-500 text-stone-900 font-bold py-4 px-12 rounded-full shadow-lg hover:bg-amber-600 transition-transform hover:scale-105"
-               >
-                 Book Zipline
-             </Link>
-           </div>
-
-           {/* Zipline Images Gallery */}
-           <div className="p-12">
+             <div className="bg-amber-50 p-6 rounded-2xl border-2 border-amber-200 inline-block mb-10">
+               <p className="text-stone-700 mb-2">Price</p>
+               <p className="text-3xl font-bold text-amber-600">₹800</p>
+             </div>
              <h3 className="text-2xl font-bold text-stone-800 mb-6 text-center">Experience the Thrill</h3>
              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                <img src={IMAGES.zipline1} alt="Zipline Experience 1" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
