@@ -102,7 +102,7 @@ const Paragliding: React.FC = () => {
             </div>
 
             <div className="lg:col-span-1">
-               <div className="bg-stone-900 text-white p-8 rounded-3xl shadow-xl sticky top-24">
+               <div className="bg-emerald-900 text-white p-8 rounded-3xl shadow-2xl sticky top-24 border-2 border-moss-500 hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
                   <h3 className="text-2xl font-bold mb-6 font-serif">Book Flight</h3>
                   <ul className="text-stone-300 space-y-4 mb-8">
                     <li className="flex gap-2"><CheckCircle size={18} className="text-moss-500" /> High Fly Paragliding</li>
@@ -111,7 +111,7 @@ const Paragliding: React.FC = () => {
                   </ul>
                   <Link
                     to="/contact"
-                    className="block w-full bg-moss-600 hover:bg-moss-500 text-white text-center font-bold py-4 rounded-xl transition-all hover:scale-105 shadow-lg mb-6"
+                    className="block w-full bg-green-600 hover:bg-lime-700 text-white text-center font-bold py-4 rounded-xl transition-all hover:scale-105 shadow-lg mb-6"
                   >
                     Book on Contact
                   </Link>

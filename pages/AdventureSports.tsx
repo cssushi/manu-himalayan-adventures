@@ -85,7 +85,7 @@ const AdventureSports: React.FC = () => {
            <Link to="/balloon" className="group">
              <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col">
                <div className="h-64 overflow-hidden relative">
-                 <img src={IMAGES.paragliding} alt="Balloon" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                 <img src={IMAGES.balloon2} alt="Balloon" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                </div>
                <div className="p-6 flex-grow">
                  <h3 className="text-xl font-bold text-stone-800 mb-2">Hot Air Balloon</h3>
