@@ -83,7 +83,8 @@ export const IMAGES = {
   malana1: "/malana1.jpeg",
   malana2: "/malana2.jpeg",
   malana3: "/malana3.jpeg",
-  advent: "/advent.jpeg"
+  advent: "/advent.jpeg",
+  owner: "/owner.jpeg"
 };
 
 // Reviews
@@ -127,5 +128,5 @@ export const NAV_LINKS = [
   { name: "Packages", path: "/packages" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
-  { name: "About Me", path: "/about-me" },
+  { name: "About Us", path: "/about-me" },
 ];

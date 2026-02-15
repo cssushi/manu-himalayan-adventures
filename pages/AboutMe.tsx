@@ -1,5 +1,6 @@
 import React from 'react';
 import { CheckCircle, Shield, Calendar, Users, Globe, Headphones } from 'lucide-react';
+import { IMAGES } from '../constants';
 
 const AboutMe: React.FC = () => {
   return (
@@ -30,14 +31,14 @@ const AboutMe: React.FC = () => {
       <section className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           
-          {/* Image Placeholder */}
+          {/* Owner Image */}
           <div className="order-2 lg:order-1">
-            <div className="aspect-[3/4] bg-gradient-to-br from-moss-200 to-earth-300 rounded-3xl shadow-2xl flex items-center justify-center border-4 border-white">
-              <div className="text-center p-8">
-                <Users className="w-24 h-24 text-moss-700 mx-auto mb-4 opacity-30" />
-                <p className="text-moss-800 font-semibold text-lg">Owner Photo</p>
-                <p className="text-moss-600 text-sm mt-2">Image Coming Soon</p>
-              </div>
+            <div className="aspect-[3/4] rounded-3xl shadow-2xl overflow-hidden border-4 border-white">
+              <img 
+                src={IMAGES.owner} 
+                alt="Lalit - Founder of Manu Himalayan Adventures" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 

@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 bg-earth-900/30 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-earth-900"></div>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-10">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 z-30">
           <div className="animate-fade-up mb-8" style={{ animationDelay: '0.1s' }}>
             <img 
               src={IMAGES.logo} 
@@ -56,6 +56,18 @@ const Home: React.FC = () => {
               View Packages <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </span>
             <div className="absolute inset-0 bg-clay-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+          </Link>
+
+          {/* About Us CTA */}
+          <Link
+            to="/about-me"
+            className="group relative px-10 py-5 bg-stone-700 text-white font-bold rounded-full overflow-hidden transition-all hover:scale-105 animate-fade-up shadow-[0_0_20px_rgba(87,83,78,0.5)] border-2 border-stone-600 mt-6"
+            style={{ animationDelay: '0.5s' }}
+          >
+            <span className="relative z-10 flex items-center gap-2 uppercase tracking-widest text-sm">
+              About Us <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+            </span>
+            <div className="absolute inset-0 bg-stone-800 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
           </Link>
         </div>
       </div>
@@ -162,13 +174,13 @@ const Home: React.FC = () => {
             </div>
           </Link>
 
-          {/* About Me */}
+          {/* About Us */}
           <Link to="/about-me" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
-            <img src={IMAGES.advent} alt="About Me" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <img src={IMAGES.advent} alt="About Us" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
               <img src={IMAGES.logo} alt="Logo" className="w-16 h-16 rounded-full mb-3 border-2 border-white/30 shadow-lg opacity-80" />
-              <h3 className="text-xl font-serif font-bold text-white mb-2">About Me</h3>
+              <h3 className="text-xl font-serif font-bold text-white mb-2">About Us</h3>
               <p className="text-earth-200 text-xs">Meet Lalit - 20+ Years of Adventure</p>
             </div>
             <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
