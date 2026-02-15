@@ -163,9 +163,11 @@ const Home: React.FC = () => {
           </Link>
 
           {/* About Me */}
-          <Link to="/about-me" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64 bg-gradient-to-br from-moss-800 to-earth-900">
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 border border-white/10 m-2 rounded-2xl">
-              <Users className="text-clay-400 mb-3" size={32} />
+          <Link to="/about-me" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
+            <img src={IMAGES.advent} alt="About Me" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
+              <img src={IMAGES.logo} alt="Logo" className="w-16 h-16 rounded-full mb-3 border-2 border-white/30 shadow-lg opacity-80" />
               <h3 className="text-xl font-serif font-bold text-white mb-2">About Me</h3>
               <p className="text-earth-200 text-xs">Meet Lalit - 20+ Years of Adventure</p>
             </div>

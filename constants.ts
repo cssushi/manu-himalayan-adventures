@@ -82,7 +82,8 @@ export const IMAGES = {
   bijli3: "/bijli3.jpeg",
   malana1: "/malana1.jpeg",
   malana2: "/malana2.jpeg",
-  malana3: "/malana3.jpeg"
+  malana3: "/malana3.jpeg",
+  advent: "/advent.jpeg"
 };
 
 // Reviews

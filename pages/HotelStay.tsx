@@ -105,7 +105,7 @@ const HotelStay: React.FC = () => {
                <div className="space-y-4 mb-8">
                  <div className="flex items-start gap-3">
                    <Check className="text-green-500 mt-1" size={16} />
-                   <p className="text-sm text-stone-600">Walking distance to Mall Road</p>
+                   <p className="text-sm text-stone-600">Great View</p>
                  </div>
                  <div className="flex items-start gap-3">
                    <Check className="text-green-500 mt-1" size={16} />
