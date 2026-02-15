@@ -84,7 +84,11 @@ export const IMAGES = {
   malana2: "/malana2.jpeg",
   malana3: "/malana3.jpeg",
   advent: "/advent.jpeg",
-  owner: "/owner.jpeg"
+  owner: "/owner.jpeg",
+  reobus1: "/reobus1.jpeg",
+  reobus2: "/reobus2.jpeg",
+  reobus3: "/reobus3.jpeg",
+  reobus4: "/reobus4.jpeg"
 };
 
 // Reviews
@@ -126,6 +130,7 @@ export const NAV_LINKS = [
   { name: "Sightseeing", path: "/sightseeing" },
   { name: "Treks", path: "/trekking-camping" },
   { name: "Packages", path: "/packages" },
+  { name: "Bus Service", path: "/bus-service" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
   { name: "About Us", path: "/about-me" },

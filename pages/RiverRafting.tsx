@@ -62,6 +62,14 @@ const RiverRafting: React.FC = () => {
               </div>
             </section>
 
+            {/* Additional rafting video */}
+            <section className="bg-white p-8 rounded-2xl shadow-sm">
+              <h3 className="text-xl font-bold text-stone-800 mb-4">More Rafting Action</h3>
+              <div className="w-full rounded-xl overflow-hidden">
+                <video src="/raftingvid0.mp4" className="w-full h-auto" controls playsInline />
+              </div>
+            </section>
+
             <section className="bg-white p-8 rounded-2xl shadow-sm">
               <h3 className="text-xl font-bold text-stone-800 mb-6">Rafting Moments</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -20,6 +20,7 @@ import Balloon from './pages/Balloon';
 import ManaliLehBikeTour from './pages/ManaliLehBikeTour';
 import TrekkingAndCamping from './pages/TrekkingAndCamping';
 import AboutMe from './pages/AboutMe';
+import BusService from './pages/BusService';
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -86,6 +87,7 @@ const App: React.FC = () => {
             <Route path="/sightseeing" element={<Sightseeing />} />
             <Route path="/trekking-camping" element={<TrekkingAndCamping />} />
             <Route path="/packages" element={<Packages />} />
+            <Route path="/bus-service" element={<BusService />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about-me" element={<AboutMe />} />

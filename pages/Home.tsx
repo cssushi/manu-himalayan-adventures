@@ -174,6 +174,15 @@ const Home: React.FC = () => {
             </div>
           </Link>
 
+          {/* Bus Service */}
+          <Link to="/bus-service" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
+            <img src={IMAGES.reobus1} alt="Bus Service" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute bottom-4 left-4">
+              <h3 className="text-xl font-serif font-bold text-white">Bus Service</h3>
+            </div>
+          </Link>
+
           {/* About Us */}
           <Link to="/about-me" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.advent} alt="About Us" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
