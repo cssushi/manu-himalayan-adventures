@@ -1,5 +1,5 @@
 import React from 'react';
-import { Clock, MapPin, Calendar, ArrowRight, Bus, Navigation } from 'lucide-react';
+import { Clock, MapPin, Calendar, ArrowRight, Bus, Navigation, Shield } from 'lucide-react';
 import { IMAGES, WHATSAPP_LINK } from '../constants';
 
 const BusService: React.FC = () => {
@@ -51,8 +51,64 @@ const BusService: React.FC = () => {
           </div>
           <div className="flex flex-col items-center">
             <Bus className="text-moss-300 mb-2" size={32} />
-            <h3 className="font-bold text-lg mb-1">Comfort</h3>
-            <p className="text-moss-200 text-sm">AC, Sleeper & Semi-Sleeper</p>
+            <h3 className="font-bold text-lg mb-1">Volvo 9600</h3>
+            <p className="text-moss-200 text-sm">AC Semi-Sleeper Comfort</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Volvo 9600 Feature Highlight */}
+      <section className="relative py-20 px-4 md:px-8 overflow-hidden bg-gradient-to-br from-earth-900 via-stone-900 to-moss-900">
+        {/* Background pattern overlay */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '40px 40px' }}></div>
+        </div>
+        
+        <div className="max-w-6xl mx-auto relative z-10">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-6 py-2 bg-gradient-to-r from-moss-600 to-moss-500 text-white rounded-full mb-6 shadow-lg">
+              <Bus size={20} className="animate-pulse" />
+              <span className="text-sm font-bold uppercase tracking-widest">Premium Fleet</span>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 drop-shadow-2xl">
+              Travel in Asia's Longest Bus
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-transparent via-moss-400 to-transparent mx-auto mb-6"></div>
+            <p className="text-earth-200 text-xl leading-relaxed max-w-3xl mx-auto">
+              Experience luxury on wheels with our flagship Volvo 9600 semi-sleeper coaches
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+            <div className="group bg-black/60 backdrop-blur-md border border-white/30 rounded-2xl p-6 hover:bg-black/70 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="w-14 h-14 bg-gradient-to-br from-moss-500 to-moss-700 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform shadow-lg">
+                <Shield className="text-white" size={28} />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Spacious Seating</h3>
+              <p className="text-gray-200 text-sm leading-relaxed">
+                Extra legroom and reclining seats for maximum comfort during your journey
+              </p>
+            </div>
+
+            <div className="group bg-black/60 backdrop-blur-md border border-white/30 rounded-2xl p-6 hover:bg-black/70 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="w-14 h-14 bg-gradient-to-br from-clay-500 to-clay-700 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform shadow-lg">
+                <Clock className="text-white" size={28} />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Smooth Ride</h3>
+              <p className="text-gray-200 text-sm leading-relaxed">
+                Advanced suspension system ensures a comfortable journey on mountain roads
+              </p>
+            </div>
+
+            <div className="group bg-black/60 backdrop-blur-md border border-white/30 rounded-2xl p-6 hover:bg-black/70 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+              <div className="w-14 h-14 bg-gradient-to-br from-stone-500 to-stone-700 rounded-xl flex items-center justify-center mb-4 group-hover:rotate-6 transition-transform shadow-lg">
+                <Navigation className="text-white" size={28} />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Climate Control</h3>
+              <p className="text-gray-200 text-sm leading-relaxed">
+                Premium AC system maintains perfect temperature throughout the trip
+              </p>
+            </div>
           </div>
         </div>
       </section>
