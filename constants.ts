@@ -126,4 +126,5 @@ export const NAV_LINKS = [
   { name: "Packages", path: "/packages" },
   { name: "Gallery", path: "/gallery" },
   { name: "Contact", path: "/contact" },
+  { name: "About Me", path: "/about-me" },
 ];

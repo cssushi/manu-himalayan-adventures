@@ -162,6 +162,18 @@ const Home: React.FC = () => {
             </div>
           </Link>
 
+          {/* About Me */}
+          <Link to="/about-me" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64 bg-gradient-to-br from-moss-800 to-earth-900">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 border border-white/10 m-2 rounded-2xl">
+              <Users className="text-clay-400 mb-3" size={32} />
+              <h3 className="text-xl font-serif font-bold text-white mb-2">About Me</h3>
+              <p className="text-earth-200 text-xs">Meet Lalit - 20+ Years of Adventure</p>
+            </div>
+            <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-md p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <ArrowRight size={16} className="group-hover:-rotate-45 transition-transform duration-300" />
+            </div>
+          </Link>
+
         </div>
       </section>
 
