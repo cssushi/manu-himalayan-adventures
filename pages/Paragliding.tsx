@@ -85,11 +85,11 @@ const Paragliding: React.FC = () => {
                   <div className="relative h-64 rounded-2xl overflow-hidden">
                     <img src={IMAGES.new1para} alt="Paragliding Experience" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
                   </div>
-                  <div className="relative h-64 rounded-2xl overflow-hidden">
-                    <img src={IMAGES.new2para} alt="Paragliding Adventure" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                  <div className="w-full rounded-xl overflow-hidden shadow-md">
+                    <video src="/new2para.mp4" className="w-full h-64 object-cover" controls playsInline />
                   </div>
-                  <div className="relative h-64 rounded-2xl overflow-hidden">
-                    <img src={IMAGES.new3para} alt="Paragliding Flight" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                  <div className="w-full rounded-xl overflow-hidden shadow-md">
+                    <video src="/new3para.mp4" className="w-full h-64 object-cover" controls playsInline />
                   </div>
                 </div>
               </section>

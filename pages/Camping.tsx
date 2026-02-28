@@ -107,6 +107,25 @@ const Camping: React.FC = () => {
            <h3 className="font-bold text-stone-800 mb-4">Camp Video</h3>
            <video src="/11.mp4" controls className="max-w-2xl rounded-xl" playsInline />
         </section>
+
+        {/* Location Section */}
+        <div className="mt-12">
+          <h3 className="text-2xl font-bold text-stone-800 mb-4">Location</h3>
+          <a href="https://maps.app.goo.gl/Y5Gf264y9Sg3KKh2A" target="_blank" rel="noopener noreferrer" className="block bg-white rounded-2xl shadow-sm p-8 border border-stone-200 hover:shadow-lg hover:border-forest-300 transition-all mb-6">
+            <div className="flex items-center justify-between">
+              <div>
+                <h4 className="text-lg font-bold text-stone-800 mb-2">Riverside Camping Stay</h4>
+                <p className="text-stone-600 text-sm">Manali - Kullu Highway</p>
+              </div>
+              <div className="text-forest-600">
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </div>
+          </a>
+          <iframe width="100%" height="400" style={{ border: 0 }} loading="lazy" allowFullScreen src="https://www.google.com/maps?q=32.05563,77.13509&z=15&output=embed" className="rounded-2xl shadow-sm border border-stone-200"></iframe>
+        </div>
       </div>
     </div>
   );

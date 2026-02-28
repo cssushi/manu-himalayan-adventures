@@ -83,7 +83,7 @@ const Home: React.FC = () => {
             <div className="absolute bottom-0 left-0 p-8">
               <span className="text-clay-500 text-xs font-bold uppercase tracking-widest mb-2 block">Most Popular</span>
               <h3 className="text-3xl md:text-5xl font-serif font-bold text-white mb-2">River Rafting</h3>
-              <p className="text-earth-200 text-sm md:text-base opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-500">
+              <p className="text-earth-200 text-sm md:text-base">
                 Conquer the Beas. 14KM of white water adrenaline.
               </p>
             </div>
@@ -117,8 +117,13 @@ const Home: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-6 left-6 right-6">
               <Star className="text-clay-500 mb-4" size={32} />
-              <h3 className="text-2xl font-serif font-bold text-white mb-2">Camping</h3>
+              <h3 className="text-2xl font-serif font-bold text-white mb-2">Riverside Camping</h3>
               <p className="text-earth-200 text-sm">Under the stars, by the river.</p>
+            </div>
+            <div className="absolute top-6 right-6">
+              <a href="https://maps.app.goo.gl/Y5Gf264y9Sg3KKh2A" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white px-3 py-2 rounded-full text-sm hover:bg-white/30 transition-colors" onClick={(e) => e.stopPropagation()}>
+                <MapPin size={16} /> View Location
+              </a>
             </div>
           </Link>
 
