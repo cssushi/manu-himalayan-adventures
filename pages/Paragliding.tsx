@@ -82,6 +82,15 @@ const Paragliding: React.FC = () => {
                   <div className="relative h-64 rounded-2xl overflow-hidden">
                     <img src={IMAGES.paragliding3} alt="Sky Adventure" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
                   </div>
+                  <div className="relative h-64 rounded-2xl overflow-hidden">
+                    <img src={IMAGES.new1para} alt="Paragliding Experience" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <div className="relative h-64 rounded-2xl overflow-hidden">
+                    <img src={IMAGES.new2para} alt="Paragliding Adventure" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                  </div>
+                  <div className="relative h-64 rounded-2xl overflow-hidden">
+                    <img src={IMAGES.new3para} alt="Paragliding Flight" className="absolute inset-0 w-full h-full object-cover hover:scale-110 transition-transform duration-500" />
+                  </div>
                 </div>
               </section>
 
@@ -94,8 +103,11 @@ const Paragliding: React.FC = () => {
                   <div className="w-full rounded-xl overflow-hidden shadow-md">
                     <video src="/paravid2.mp4" className="w-full h-auto" controls playsInline />
                   </div>
-                  <div className="w-full rounded-xl overflow-hidden shadow-md md:col-span-2 lg:col-span-1">
+                  <div className="w-full rounded-xl overflow-hidden shadow-md">
                     <video src="/paravidgugu.mp4" className="w-full h-auto" controls playsInline />
+                  </div>
+                  <div className="w-full rounded-xl overflow-hidden shadow-md">
+                    <video src="/new5para.mp4" className="w-full h-auto" controls playsInline />
                   </div>
                 </div>
               </section>

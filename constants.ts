@@ -88,7 +88,11 @@ export const IMAGES = {
   reobus1: "/reobus1.jpeg",
   reobus2: "/reobus2.jpeg",
   reobus3: "/reobus3.jpeg",
-  reobus4: "/reobus4.jpeg"
+  reobus4: "/reobus4.jpeg",
+  new1para: "/new1para.jpeg",
+  new2para: "/new2para.jpeg",
+  new3para: "/new3para.jpeg",
+  new5para: "/new5para.jpeg"
 };
 
 // Reviews

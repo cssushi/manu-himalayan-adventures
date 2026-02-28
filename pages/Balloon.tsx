@@ -42,6 +42,13 @@ const Balloon: React.FC = () => {
                 <img src={IMAGES.balloon1} alt="Balloon Experience 1" className="w-full h-64 object-cover rounded-2xl shadow-md hover:shadow-lg transition-shadow" />
               </div>
             </section>
+
+            <section className="bg-white p-8 rounded-3xl shadow-sm">
+              <h3 className="text-2xl font-bold text-stone-800 mb-6">Hot Air Balloon in Action</h3>
+              <div className="w-full rounded-xl overflow-hidden shadow-md">
+                <video src="/new4loon.mp4" className="w-full h-auto" controls playsInline />
+              </div>
+            </section>
           </div>
 
           <div className="lg:col-span-1">

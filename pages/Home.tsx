@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, Shield, Users, Map } from 'lucide-react';
+import { ArrowRight, Star, Shield, Users, Map, MapPin } from 'lucide-react';
 import { IMAGES, REVIEWS } from '../constants';
 import ReviewCard from '../components/ReviewCard';
 
@@ -87,99 +87,138 @@ const Home: React.FC = () => {
                 Conquer the Beas. 14KM of white water adrenaline.
               </p>
             </div>
+            <div className="absolute top-6 right-6">
+              <a href="https://maps.app.goo.gl/Y5Gf264y9Sg3KKh2A" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white px-3 py-2 rounded-full text-sm hover:bg-white/30 transition-colors" onClick={(e) => e.stopPropagation()}>
+                <MapPin size={16} /> View Location
+              </a>
+            </div>
           </Link>
 
           {/* Paragliding */}
           <Link to="/paragliding" className="group md:col-span-2 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.paragliding} alt="Paragliding" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90 group-hover:opacity-100 transition-opacity"></div>
             <div className="absolute bottom-6 left-6">
-               <h3 className="text-2xl font-serif font-bold text-white">Paragliding</h3>
+               <h3 className="text-2xl font-serif font-bold text-white mb-2">Paragliding</h3>
+               <p className="text-earth-200 text-sm md:text-base">
+                 Soar 8000 feet above sea level. 360° Himalayan views.
+               </p>
             </div>
-            <div className="absolute top-6 right-6 bg-white/20 backdrop-blur-md p-3 rounded-full text-white">
-               <ArrowRight size={20} className="group-hover:-rotate-45 transition-transform duration-300" />
+            <div className="absolute top-6 right-6">
+              <a href="https://maps.app.goo.gl/G81bdhgQz29vUTgn8" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white px-3 py-2 rounded-full text-sm hover:bg-white/30 transition-colors" onClick={(e) => e.stopPropagation()}>
+                <MapPin size={16} /> View Location
+              </a>
             </div>
           </Link>
 
           {/* Camping */}
           <Link to="/camping" className="group md:col-span-1 md:row-span-2 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer bg-moss-900 h-96 md:h-full">
             <img src={IMAGES.camping} alt="Camping" className="absolute inset-0 w-full h-full object-cover opacity-60 transition-opacity group-hover:opacity-40" />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4 border border-white/10 m-2 rounded-2xl">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <div className="absolute bottom-6 left-6 right-6">
               <Star className="text-clay-500 mb-4" size={32} />
               <h3 className="text-2xl font-serif font-bold text-white mb-2">Camping</h3>
-              <p className="text-earth-200 text-xs">Under the stars, by the river.</p>
+              <p className="text-earth-200 text-sm">Under the stars, by the river.</p>
             </div>
           </Link>
 
           {/* Bike Rental */}
           <Link to="/vehicle-rental" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.bike} alt="Bike Rental" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-xl font-serif font-bold text-white">Moto Rentals</h3>
+              <h3 className="text-xl font-serif font-bold text-white mb-1">Moto Rentals</h3>
+              <p className="text-earth-200 text-sm">Royal Enfield & adventure bikes.</p>
+            </div>
+            <div className="absolute top-4 right-4">
+              <a href="https://maps.app.goo.gl/ccV8uwHPRspU4k7f7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white px-3 py-2 rounded-full text-sm hover:bg-white/30 transition-colors" onClick={(e) => e.stopPropagation()}>
+                <MapPin size={16} /> View Location
+              </a>
             </div>
           </Link>
 
           {/* Bungee Jumping */}
           <Link to="/bungee-jumping" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.bungee} alt="Bungee" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-xl font-serif font-bold text-white">Bungee Jump</h3>
+              <h3 className="text-xl font-serif font-bold text-white mb-1">Bungee Jump</h3>
+              <p className="text-earth-200 text-sm">83m free fall. Ultimate adrenaline.</p>
+            </div>
+            <div className="absolute top-4 right-4">
+              <a href="https://maps.app.goo.gl/hYYywUge45rYpFiz7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white px-3 py-2 rounded-full text-sm hover:bg-white/30 transition-colors" onClick={(e) => e.stopPropagation()}>
+                <MapPin size={16} /> View Location
+              </a>
             </div>
           </Link>
 
           {/* Zipline */}
           <Link to="/zipline" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.zipline} alt="Zipline" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-xl font-serif font-bold text-white">Zipline</h3>
+              <h3 className="text-xl font-serif font-bold text-white mb-1">Zipline</h3>
+              <p className="text-earth-200 text-sm">Fly across the valley at speed.</p>
             </div>
           </Link>
 
           {/* Hot Air Balloon */}
           <Link to="/balloon" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.balloon2} alt="Balloon" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-xl font-serif font-bold text-white">Balloon Ride</h3>
+              <h3 className="text-xl font-serif font-bold text-white mb-1">Balloon Ride</h3>
+              <p className="text-earth-200 text-sm">Sunrise flights above the valley.</p>
+            </div>
+            <div className="absolute top-4 right-4">
+              <a href="https://maps.app.goo.gl/YiK5KNTA5XA6dywc7" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white px-3 py-2 rounded-full text-sm hover:bg-white/30 transition-colors" onClick={(e) => e.stopPropagation()}>
+                <MapPin size={16} /> View Location
+              </a>
             </div>
           </Link>
 
           {/* Hotel Stay */}
           <Link to="/hotel-stay" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.hotel} alt="Hotel" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-xl font-serif font-bold text-white">Luxury Stays</h3>
+              <h3 className="text-xl font-serif font-bold text-white mb-1">Luxury Stays</h3>
+              <p className="text-earth-200 text-sm">Comfort in the mountains.</p>
+            </div>
+            <div className="absolute top-4 right-4">
+              <a href="https://maps.app.goo.gl/xfuMWvpS2XBNF2mG9" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white px-3 py-2 rounded-full text-sm hover:bg-white/30 transition-colors" onClick={(e) => e.stopPropagation()}>
+                <MapPin size={16} /> View Location
+              </a>
             </div>
           </Link>
 
           {/* Sightseeing */}
           <Link to="/sightseeing" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.temple} alt="Sightseeing" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-xl font-serif font-bold text-white">Sightseeing</h3>
+              <h3 className="text-xl font-serif font-bold text-white mb-1">Sightseeing</h3>
+              <p className="text-earth-200 text-sm">Explore temples & waterfalls.</p>
             </div>
           </Link>
 
           {/* Treks */}
           <Link to="/trekking-camping" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.malana3} alt="Treks" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-xl font-serif font-bold text-white">Treks</h3>
+              <h3 className="text-xl font-serif font-bold text-white mb-1">Treks</h3>
+              <p className="text-earth-200 text-sm">High altitude trails & lakes.</p>
             </div>
           </Link>
 
           {/* Bus Service */}
           <Link to="/bus-service" className="group md:col-span-1 md:row-span-1 relative rounded-3xl overflow-hidden shadow-xl cursor-pointer h-64">
             <img src={IMAGES.reobus1} alt="Bus Service" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4">
-              <h3 className="text-xl font-serif font-bold text-white">Bus Service</h3>
+              <h3 className="text-xl font-serif font-bold text-white mb-1">Bus Service</h3>
+              <p className="text-earth-200 text-sm">Delhi-Manali Volvo 9600.</p>
             </div>
           </Link>
 
