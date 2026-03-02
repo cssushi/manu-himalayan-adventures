@@ -275,7 +275,7 @@ const BusService: React.FC = () => {
               Book via WhatsApp <ArrowRight size={20} />
             </a>
             <a
-              href="tel:+917807364252"
+              href="tel:+917037617755"
               className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white hover:bg-white hover:text-earth-900 px-10 py-4 rounded-full font-bold text-lg transition-colors"
             >
               Call to Book

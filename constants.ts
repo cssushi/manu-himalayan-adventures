@@ -1,9 +1,9 @@
 import { Mountain, Wind, ShieldCheck, Smile, MapPin, Phone, Mail, Tent, Bike, Car, Camera, CheckCircle } from 'lucide-react';
 
 // Contact Details
-export const PHONE_NUMBER = "+917807364252";
-export const PHONE_DISPLAY = "+91 7807364252";
-export const WHATSAPP_LINK = `https://wa.me/917807364252`;
+export const PHONE_NUMBER = "+917037617755";
+export const PHONE_DISPLAY = "+91 7037617755";
+export const WHATSAPP_LINK = `https://wa.me/917037617755`;
 export const EMAIL_ADDRESS = "Manuhimalayanadventures@gmail.com";
 export const LOCATION = "Manali / Kullu, Himachal Pradesh, India";
 
