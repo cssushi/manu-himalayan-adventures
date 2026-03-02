@@ -32,7 +32,6 @@ const Contact: React.FC = () => {
               <div className="space-y-1">
                 <p className="text-stone-600">{PHONE_DISPLAY}</p>
                 <p className="text-stone-600">+91 9459994020</p>
-                <p className="text-stone-600">+91 7037617755</p>
               </div>
             </div>
 
