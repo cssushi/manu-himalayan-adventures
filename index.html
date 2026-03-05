@@ -131,28 +131,74 @@
 </script>
 <link rel="stylesheet" href="/index.css">
 
-<!-- Structured Data for Google -->
+<!-- Structured Data for Google - Organization -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TravelAgency",
+  "@type": "Organization",
   "name": "Manu Himalayan Adventures",
-  "description": "Experience the best of Manali with Manu Himalayan Adventures. River rafting, paragliding, camping, and vehicle rentals in Himachal Pradesh.",
+  "alternateName": "Manu Himalayan Adventures Manali",
   "url": "https://manuhimalayanadventure.in",
-  "logo": "https://manuhimalayanadventure.in/new_logo.png",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://manuhimalayanadventure.in/new_logo.png",
+    "width": 800,
+    "height": 800
+  },
   "image": "https://manuhimalayanadventure.in/new_logo.png",
-  "telephone": "+91 7037617755",
+  "description": "Premier adventure travel company in Manali offering river rafting, paragliding, camping, vehicle rentals, and more adventure activities in Himachal Pradesh.",
+  "telephone": "+917037617755",
+  "email": "Manuhimalayanadventures@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Manali",
+    "addressLocality": "Manali",
+    "addressRegion": "Himachal Pradesh",
+    "postalCode": "175131",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "32.2396",
+    "longitude": "77.1887"
+  },
+  "sameAs": [
+    "https://manuhimalayanadventure.in"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+917037617755",
+    "contactType": "Customer Service",
+    "areaServed": "IN",
+    "availableLanguage": ["English", "Hindi"]
+  }
+}
+</script>
+
+<!-- Structured Data for Google - Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Manu Himalayan Adventures",
+  "image": "https://manuhimalayanadventure.in/new_logo.png",
+  "url": "https://manuhimalayanadventure.in",
+  "telephone": "+917037617755",
   "email": "Manuhimalayanadventures@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Manali",
     "addressRegion": "Himachal Pradesh",
+    "postalCode": "175131",
     "addressCountry": "IN"
   },
-  "sameAs": [
-    "https://manuhimalayanadventure.in"
-  ],
-  "priceRange": "₹₹"
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "32.2396",
+    "longitude": "77.1887"
+  },
+  "priceRange": "₹₹",
+  "servesCuisine": "Adventure Tourism"
 }
 </script>
 
