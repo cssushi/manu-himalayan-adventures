@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
-import { PHONE_DISPLAY, EMAIL_ADDRESS, LOCATION, IMAGES } from '../constants';
+import { PHONE_DISPLAY, SECONDARY_PHONE_DISPLAY, EMAIL_ADDRESS, LOCATION, IMAGES } from '../constants';
 
 const Footer: React.FC = () => {
   return (
@@ -53,7 +53,10 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-forest-500 flex-shrink-0" />
-                <Link to="/contact" className="hover:text-white">{PHONE_DISPLAY}</Link>
+                <div className="flex flex-col">
+                  <Link to="/contact" className="hover:text-white">{PHONE_DISPLAY}</Link>
+                  <Link to="/contact" className="hover:text-white">{SECONDARY_PHONE_DISPLAY}</Link>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-forest-500 flex-shrink-0" />

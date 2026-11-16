@@ -167,7 +167,7 @@ If you need me to add the Google verification meta tag:
 
 **Your Sitemap URL**: https://manuhimalayanadventure.in/sitemap.xml
 **Your Robots.txt**: https://manuhimalayanadventure.in/robots.txt
-**Main Phone**: +91 7037617755
+**Main Phones**: +91 7037617755, +91 7018453271
 **Email**: Manuhimalayanadventures@gmail.com
 
 Good luck! Your SEO foundation is now solid. 🎉

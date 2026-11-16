@@ -3,6 +3,8 @@ import { Mountain, Wind, ShieldCheck, Smile, MapPin, Phone, Mail, Tent, Bike, Ca
 // Contact Details
 export const PHONE_NUMBER = "+917037617755";
 export const PHONE_DISPLAY = "+91 7037617755";
+export const SECONDARY_PHONE_NUMBER = "+917018453271";
+export const SECONDARY_PHONE_DISPLAY = "+91 7018453271";
 export const WHATSAPP_LINK = `https://wa.me/917037617755`;
 export const EMAIL_ADDRESS = "Manuhimalayanadventures@gmail.com";
 export const LOCATION = "Manali / Kullu, Himachal Pradesh, India";

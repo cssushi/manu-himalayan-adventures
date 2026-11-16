@@ -1,6 +1,6 @@
 import React from 'react';
 import { Clock, MapPin, Calendar, ArrowRight, Bus, Navigation, Shield } from 'lucide-react';
-import { IMAGES, WHATSAPP_LINK } from '../constants';
+import { IMAGES, PHONE_DISPLAY, PHONE_NUMBER, SECONDARY_PHONE_DISPLAY, SECONDARY_PHONE_NUMBER, WHATSAPP_LINK } from '../constants';
 
 const BusService: React.FC = () => {
   const departureTimes = ["8:25 PM", "9:25 PM", "10:25 PM"];
@@ -275,10 +275,16 @@ const BusService: React.FC = () => {
               Book via WhatsApp <ArrowRight size={20} />
             </a>
             <a
-              href="tel:+917037617755"
+              href={`tel:${PHONE_NUMBER}`}
               className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white hover:bg-white hover:text-earth-900 px-10 py-4 rounded-full font-bold text-lg transition-colors"
             >
-              Call to Book
+              Call {PHONE_DISPLAY}
+            </a>
+            <a
+              href={`tel:${SECONDARY_PHONE_NUMBER}`}
+              className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white hover:bg-white hover:text-earth-900 px-10 py-4 rounded-full font-bold text-lg transition-colors"
+            >
+              Call {SECONDARY_PHONE_DISPLAY}
             </a>
           </div>
 

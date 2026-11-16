@@ -20,7 +20,7 @@ Copy this checklist and check off items as you complete them!
 - [ ] 11. Go to https://business.google.com
 - [ ] 12. Create/claim business listing for "Manu Himalayan Adventures"
 - [ ] 13. Add accurate address: Manali, Himachal Pradesh
-- [ ] 14. Add phone: +91 7037617755
+- [ ] 14. Add phones: +91 7037617755, +91 7018453271
 - [ ] 15. Add website: https://manuhimalayanadventure.in
 - [ ] 16. Add business hours
 - [ ] 17. Upload at least 5 photos (logo, activities, location)

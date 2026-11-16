@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
-import { PHONE_DISPLAY, EMAIL_ADDRESS, LOCATION, WHATSAPP_LINK } from '../constants';
+import { PHONE_DISPLAY, SECONDARY_PHONE_DISPLAY, EMAIL_ADDRESS, LOCATION, WHATSAPP_LINK } from '../constants';
 
 const Contact: React.FC = () => {
   const [name, setName] = useState('');
@@ -32,6 +32,7 @@ const Contact: React.FC = () => {
               <div className="space-y-1">
                 <p className="text-stone-600">{PHONE_DISPLAY}</p>
                 <p className="text-stone-600">+91 9459994020</p>
+                <p className="text-stone-600">{SECONDARY_PHONE_DISPLAY}</p>
               </div>
             </div>
 
